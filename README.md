@@ -144,7 +144,7 @@ The code and weights for CoSA-MS are coming soon.
 
 ## Citation
 Please cite our work if you find it helpful:
-```bash
+```markdown
 @article{yang2024weakly,
   title={Weakly supervised co-training with swapping assignments for semantic segmentation},
   author={Yang, Xinyu and Rahmani, Hossein and Black, Sue and Williams, Bryan M},
