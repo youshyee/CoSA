@@ -32,49 +32,27 @@ Class activation maps (CAMs) are commonly employed in weakly supervised semantic
 ## Comparison with SOTA
 
 On COCO dataset:
-<img src="https://github.com/youshyee/CoSA/blob/main/assets/coco1.png" alt="overview" width="1200"/>
-<img src="https://github.com/youshyee/CoSA/blob/main/assets/coco2.png" alt="overview" width="1200"/>
+
+![voc](coco1.png)
+![voc](coco2.png)
 
 On VOC dataset:
-<img src="https://github.com/youshyee/CoSA/blob/main/assets/voc1.png" alt="overview" width="1200"/>
+![voc](voc1.png)
 
 ## Paper
 
-[PDF](https://youshyee.com/pdfs/CoSA.pdf)
-[Poster](./conference_poster.pdf)
+[PDF](https://youshyee.com/pdfs/CoSA.pdf) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[Poster](./cosa_poster.pdf)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [ArXiv](https://arxiv.org/abs/2402.17891)
 
 
 ## Bibtex
 
 ```markdown
-@misc{yang2021dcldet,
-      title={Dynamic Curriculum Learning for Great Ape Detection in the Wild},
-      author={Xinyu Yang and Tilo Burghardt and Majid Mirmehdi},
-      year={2022},
-      eprint={2205.00275},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@article{yang2024weakly,
+  title={Weakly supervised co-training with swapping assignments for semantic segmentation},
+  author={Yang, Xinyu and Rahmani, Hossein and Black, Sue and Williams, Bryan M},
+  journal={arXiv preprint arXiv:2402.17891},
+  year={2024}
 }
 ```
-
-## Acknowledgements
-
-We would like to thank the entire team of the Pan
-African Programme: ‘The Cultured Chimpanzee’ MaxPlanck-Institute (2022) and its collaborators for allowing the use of their data for this project. Please contact the copyright holder Pan African Programme at
-http://panafrican.eva.mpg.de to obtain the source
-videos from the dataset. Particularly, we thank: H
-Kuehl, C Boesch, M Arandjelovic, and P Dieguez. We
-would also like to thank: K Zuberbuehler, K Corogenes,
-E Normand, V Vergnes, A Meier, J Lapuente, D Dowd,
-S Jones, V Leinert, EWessling, H Eshuis, K Langergraber, S Angedakin, S Marrocoli, K Dierks, T C Hicks,
-J Hart, K Lee, and M Murai. Thanks also to the team
-at https://www.chimpandsee.org. The work that allowed for the collection of the dataset was funded by
-the Max Planck Society, Max Planck Society Innovation
-Fund, and Heinz L. Krekeler. In this respect we would
-also like to thank: Foundation Ministre de la Recherche
-Scientifique, and Ministre des Eaux et For lts in Cote
-d’Ivoire; Institut Congolais pour la Conservation de la
-Nature and Ministre de la Recherch Scientifique in DR
-Congo; Forestry Development Authority in Liberia; Direction des Eaux, For lts Chasses et de la Conservation
-des Sols, Senegal; and Uganda National Council for Science and Technology, Uganda Wildlife Authority, National Forestry Authority in Uganda.
