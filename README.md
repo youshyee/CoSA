@@ -120,8 +120,8 @@ sh run_voc.sh
 Semantic performance on VOC and COCO. Logs and weights are available now.
 | Dataset   | Backbone   | Val     | Test                                                           | Log                             | Weight     |
 | :-------: | :--------: | :-----: | :----:                                                         | :---:                           | :------:   |
-| COCO      | ViT-B      | 51.0    | -                                                              | [log](assets/logs/coco_log.txt) | [weight]() |
-| VOC       | ViT-B      | 76.2    | [75.1](http://host.robots.ox.ac.uk:8080/anonymous/GOZOHI.html) | [log](assets/logs/voc_log.txt)  | [weight]() |
+| COCO      | ViT-B      | 51.0    | -                                                              | [log](assets/logs/coco_log.txt) | [weight](https://github.com/youshyee/CoSA/releases/download/weight_release/coco_weights.pth) |
+| VOC       | ViT-B      | 76.2    | [75.1](http://host.robots.ox.ac.uk:8080/anonymous/GOZOHI.html) | [log](assets/logs/voc_log.txt)  | [weight](https://github.com/youshyee/CoSA/releases/download/weight_release/voc_weights.pth) |
 
 Visualization results for CoSA comparing with [MCT](https://github.com/xulianuwa/MCTformer), [ToCo](https://github.com/rulixiang/ToCo) and [BECO](https://github.com/ShenghaiRong/BECO) on COCO:
 
