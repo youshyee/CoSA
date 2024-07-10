@@ -1,0 +1,10 @@
+numpy==1.24.3
+torch==2.2.1
+torchvision==0.17.1
+pandas
+imageio==2.28.1
+openmim
+cython
+scikit-learn==1.2.2
+texttable==1.6.7
+timm==0.9.5

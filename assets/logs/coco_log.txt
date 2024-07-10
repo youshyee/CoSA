@@ -1,0 +1,1891 @@
+git:
+  sha: 9ee5e227369e196e07831091c4b60efe3a6ef642, status: clean, branch: master
+
+Namespace(name='COCO_HS_03_lbz',
+model='vit',
+backbone='vit_base_patch16_224',
+pretrained=True,
+aux_layer=-3,
+isgap=False,
+finalval=True,
+seed=0,
+random_seed=False,
+work_dir='/media/hossein-rahmani/Data1/xinyuyang/space/cocoseg',
+output_dir=PosixPath('/media/hossein-rahmani/Data1/xinyuyang/space/cocoseg/COCO_HS_03_lbz'),
+device='cuda',
+save_per_eval=10,
+eval_iters=6000,
+turnon_rawcam=False,
+fasteval=True,
+valfull=False,
+eval_threshold_filters=None,
+dataset='COCO',
+coco_root='/media/hossein-rahmani/Data1/xinyuyang/data/coco',
+crop_size=448,
+scales=(0.5,
+2),
+ignore_index=255,
+num_classes=81,
+batch_size=4,
+num_workers=4,
+max_iters=60000,
+warmup_iters=10000,
+lr=6e-05,
+min_mult=0.0,
+wt_dec=0.01,
+cam_weight=0.05,
+camloss_version='v1',
+seg_weight=0.1,
+segfg_alpha=0.5,
+reg_weight=0.05,
+momentum=0.9994,
+pseudo_scales=[1.0,
+0.5,
+1.5],
+high_thre=0.65,
+high_thre_aux=0.7,
+bkg_thre=0.5,
+low_thre=0.25,
+low_thre_aux=0.25,
+usegmm=False,
+usegmmaux=False,
+gmmscale=16,
+gmmfilter_thre=0.05,
+queue_update_ratio=100,
+camweight_beta=1.0,
+par_downscale=2,
+usepar=False,
+aux_cam2seg=True,
+aux_cam2seg_traditional=True,
+aux_cam2seg_alpha=0.5,
+aux_seg2cam=False,
+aux_seg2cam_alpha=0.5,
+seg_softmaxtemp=0.01,
+segconf_thre=0.25,
+after_softmax=False,
+detach='none',
+use_cammix=False,
+oracle_camloss_version='v1',
+oracle_camloss_detach=False,
+oracle_camloss_bgmax=True,
+rank=0,
+world_size=2,
+gpu=0,
+dist_url='env://',
+distributed=True,
+dist_backend='nccl')
+<dataloaders.coco.COCOClsDatasetNew object at 0x7ff08cd4ad10>
+dataset name: COCOSegDataset
+length: 5000
+split: val_part
+
+here pretrained
+Number of params for Network: 92M
+Start training
+Iter: 200; Elasped: 0:08:32; ETA: 1 day, 18:31:28; Itertime: 2.56; LR: 7.960e-06;
+ overall_loss: 9.0859, cls_loss: 0.3559, cls_acc: 0.192,  cls_aux_loss: 8.7300, cls_aux_acc: 0.086, seg_loss: 4.4304, cam_loss: 0.7969, reg_loss: -0.0672 ...
+Iter: 400; Elasped: 0:17:01; ETA: 1 day, 18:15:29; Itertime: 2.54; LR: 1.596e-05;
+ overall_loss: 0.5069, cls_loss: 0.1355, cls_acc: 0.318,  cls_aux_loss: 0.3714, cls_aux_acc: 0.233, seg_loss: 4.4256, cam_loss: 0.7824, reg_loss: -0.0671 ...
+Iter: 600; Elasped: 0:25:28; ETA: 1 day, 18:01:12; Itertime: 2.54; LR: 2.396e-05;
+ overall_loss: 0.3339, cls_loss: 0.1248, cls_acc: 0.348,  cls_aux_loss: 0.2091, cls_aux_acc: 0.264, seg_loss: 4.4300, cam_loss: 0.7765, reg_loss: -0.0639 ...
+Iter: 800; Elasped: 0:33:55; ETA: 1 day, 17:49:50; Itertime: 2.54; LR: 3.196e-05;
+ overall_loss: 0.2740, cls_loss: 0.1120, cls_acc: 0.451,  cls_aux_loss: 0.1620, cls_aux_acc: 0.328, seg_loss: 4.4301, cam_loss: 0.8013, reg_loss: -0.0654 ...
+Iter: 1000; Elasped: 0:42:23; ETA: 1 day, 17:40:37; Itertime: 2.54; LR: 3.996e-05;
+ overall_loss: 0.2442, cls_loss: 0.0984, cls_acc: 0.560,  cls_aux_loss: 0.1458, cls_aux_acc: 0.383, seg_loss: 4.4303, cam_loss: 0.8581, reg_loss: -0.0652 ...
+Iter: 1200; Elasped: 0:50:50; ETA: 1 day, 17:30:50; Itertime: 2.53; LR: 4.796e-05;
+ overall_loss: 0.2316, cls_loss: 0.0898, cls_acc: 0.624,  cls_aux_loss: 0.1418, cls_aux_acc: 0.435, seg_loss: 4.4303, cam_loss: 0.9065, reg_loss: -0.0659 ...
+Iter: 1400; Elasped: 0:59:16; ETA: 1 day, 17:20:44; Itertime: 2.53; LR: 5.596e-05;
+ overall_loss: 0.2127, cls_loss: 0.0811, cls_acc: 0.681,  cls_aux_loss: 0.1316, cls_aux_acc: 0.494, seg_loss: 4.4295, cam_loss: 0.9547, reg_loss: -0.0690 ...
+Iter: 1600; Elasped: 1:07:43; ETA: 1 day, 17:11:39; Itertime: 2.53; LR: 5.856e-05;
+ overall_loss: 0.2050, cls_loss: 0.0765, cls_acc: 0.717,  cls_aux_loss: 0.1285, cls_aux_acc: 0.534, seg_loss: 4.4273, cam_loss: 0.9972, reg_loss: -0.0697 ...
+Iter: 1800; Elasped: 1:16:10; ETA: 1 day, 17:02:43; Itertime: 2.53; LR: 5.838e-05;
+ overall_loss: 0.1939, cls_loss: 0.0732, cls_acc: 0.750,  cls_aux_loss: 0.1207, cls_aux_acc: 0.590, seg_loss: 4.4230, cam_loss: 1.0189, reg_loss: -0.0674 ...
+Iter: 2000; Elasped: 1:24:36; ETA: 1 day, 16:53:24; Itertime: 2.53; LR: 5.820e-05;
+ overall_loss: 0.1749, cls_loss: 0.0685, cls_acc: 0.763,  cls_aux_loss: 0.1064, cls_aux_acc: 0.630, seg_loss: 4.4243, cam_loss: 1.0297, reg_loss: -0.0667 ...
+Iter: 2200; Elasped: 1:33:02; ETA: 1 day, 16:44:14; Itertime: 2.53; LR: 5.802e-05;
+ overall_loss: 0.1752, cls_loss: 0.0691, cls_acc: 0.774,  cls_aux_loss: 0.1061, cls_aux_acc: 0.647, seg_loss: 4.4241, cam_loss: 1.0531, reg_loss: -0.0641 ...
+Iter: 2400; Elasped: 1:41:28; ETA: 1 day, 16:35:12; Itertime: 2.53; LR: 5.784e-05;
+ overall_loss: 0.1678, cls_loss: 0.0663, cls_acc: 0.790,  cls_aux_loss: 0.1015, cls_aux_acc: 0.671, seg_loss: 4.4252, cam_loss: 1.0634, reg_loss: -0.0709 ...
+Iter: 2600; Elasped: 1:49:55; ETA: 1 day, 16:26:37; Itertime: 2.54; LR: 5.766e-05;
+ overall_loss: 0.1645, cls_loss: 0.0665, cls_acc: 0.782,  cls_aux_loss: 0.0980, cls_aux_acc: 0.677, seg_loss: 4.4323, cam_loss: 1.0699, reg_loss: -0.0660 ...
+Iter: 2800; Elasped: 1:58:23; ETA: 1 day, 16:18:24; Itertime: 2.54; LR: 5.747e-05;
+ overall_loss: 0.1632, cls_loss: 0.0650, cls_acc: 0.806,  cls_aux_loss: 0.0982, cls_aux_acc: 0.687, seg_loss: 4.4302, cam_loss: 1.0760, reg_loss: -0.0675 ...
+Iter: 3000; Elasped: 2:06:49; ETA: 1 day, 16:09:31; Itertime: 2.53; LR: 5.729e-05;
+ overall_loss: 0.1578, cls_loss: 0.0632, cls_acc: 0.804,  cls_aux_loss: 0.0946, cls_aux_acc: 0.693, seg_loss: 4.4267, cam_loss: 1.0719, reg_loss: -0.0694 ...
+Iter: 3200; Elasped: 2:15:15; ETA: 1 day, 16:00:41; Itertime: 2.53; LR: 5.711e-05;
+ overall_loss: 0.1635, cls_loss: 0.0673, cls_acc: 0.787,  cls_aux_loss: 0.0962, cls_aux_acc: 0.685, seg_loss: 4.4238, cam_loss: 1.0821, reg_loss: -0.0646 ...
+Iter: 3400; Elasped: 2:23:41; ETA: 1 day, 15:51:54; Itertime: 2.53; LR: 5.693e-05;
+ overall_loss: 0.1544, cls_loss: 0.0636, cls_acc: 0.803,  cls_aux_loss: 0.0908, cls_aux_acc: 0.705, seg_loss: 4.4172, cam_loss: 1.0766, reg_loss: -0.0673 ...
+Iter: 3600; Elasped: 2:32:08; ETA: 1 day, 15:43:25; Itertime: 2.53; LR: 5.675e-05;
+ overall_loss: 0.1500, cls_loss: 0.0615, cls_acc: 0.796,  cls_aux_loss: 0.0885, cls_aux_acc: 0.699, seg_loss: 4.4122, cam_loss: 1.0612, reg_loss: -0.0684 ...
+Iter: 3800; Elasped: 2:40:35; ETA: 1 day, 15:34:56; Itertime: 2.53; LR: 5.657e-05;
+ overall_loss: 0.1513, cls_loss: 0.0645, cls_acc: 0.794,  cls_aux_loss: 0.0868, cls_aux_acc: 0.706, seg_loss: 4.4176, cam_loss: 1.0485, reg_loss: -0.0654 ...
+Iter: 4000; Elasped: 2:49:01; ETA: 1 day, 15:26:14; Itertime: 2.53; LR: 5.639e-05;
+ overall_loss: 0.1439, cls_loss: 0.0617, cls_acc: 0.803,  cls_aux_loss: 0.0822, cls_aux_acc: 0.731, seg_loss: 4.4207, cam_loss: 1.0408, reg_loss: -0.0668 ...
+Iter: 4200; Elasped: 2:57:27; ETA: 1 day, 15:17:33; Itertime: 2.53; LR: 5.621e-05;
+ overall_loss: 0.1482, cls_loss: 0.0641, cls_acc: 0.796,  cls_aux_loss: 0.0841, cls_aux_acc: 0.717, seg_loss: 4.4080, cam_loss: 1.0253, reg_loss: -0.0681 ...
+Iter: 4400; Elasped: 3:05:54; ETA: 1 day, 15:09:06; Itertime: 2.53; LR: 5.603e-05;
+ overall_loss: 0.1394, cls_loss: 0.0621, cls_acc: 0.810,  cls_aux_loss: 0.0773, cls_aux_acc: 0.758, seg_loss: 4.4094, cam_loss: 1.0189, reg_loss: -0.0665 ...
+Iter: 4600; Elasped: 3:14:22; ETA: 1 day, 15:00:51; Itertime: 2.54; LR: 5.584e-05;
+ overall_loss: 0.1388, cls_loss: 0.0624, cls_acc: 0.802,  cls_aux_loss: 0.0764, cls_aux_acc: 0.743, seg_loss: 4.4178, cam_loss: 0.9955, reg_loss: -0.0704 ...
+Iter: 4800; Elasped: 3:22:50; ETA: 1 day, 14:52:35; Itertime: 2.54; LR: 5.566e-05;
+ overall_loss: 0.1338, cls_loss: 0.0599, cls_acc: 0.817,  cls_aux_loss: 0.0739, cls_aux_acc: 0.765, seg_loss: 4.4223, cam_loss: 0.9930, reg_loss: -0.0642 ...
+Iter: 5000; Elasped: 3:31:17; ETA: 1 day, 14:44:07; Itertime: 2.53; LR: 5.548e-05;
+ overall_loss: 0.1357, cls_loss: 0.0614, cls_acc: 0.815,  cls_aux_loss: 0.0743, cls_aux_acc: 0.766, seg_loss: 4.4205, cam_loss: 0.9901, reg_loss: -0.0655 ...
+Iter: 5200; Elasped: 3:39:44; ETA: 1 day, 14:35:39; Itertime: 2.53; LR: 5.530e-05;
+ overall_loss: 0.1379, cls_loss: 0.0629, cls_acc: 0.802,  cls_aux_loss: 0.0749, cls_aux_acc: 0.758, seg_loss: 4.3963, cam_loss: 0.9793, reg_loss: -0.0674 ...
+Iter: 5400; Elasped: 3:48:10; ETA: 1 day, 14:27:01; Itertime: 2.53; LR: 5.512e-05;
+ overall_loss: 0.1287, cls_loss: 0.0588, cls_acc: 0.816,  cls_aux_loss: 0.0700, cls_aux_acc: 0.775, seg_loss: 4.4144, cam_loss: 0.9606, reg_loss: -0.0646 ...
+Iter: 5600; Elasped: 3:56:38; ETA: 1 day, 14:18:43; Itertime: 2.54; LR: 5.494e-05;
+ overall_loss: 0.1250, cls_loss: 0.0569, cls_acc: 0.813,  cls_aux_loss: 0.0680, cls_aux_acc: 0.763, seg_loss: 4.4133, cam_loss: 0.9585, reg_loss: -0.0671 ...
+Iter: 5800; Elasped: 4:05:04; ETA: 1 day, 14:10:06; Itertime: 2.53; LR: 5.475e-05;
+ overall_loss: 0.1355, cls_loss: 0.0620, cls_acc: 0.804,  cls_aux_loss: 0.0735, cls_aux_acc: 0.764, seg_loss: 4.3882, cam_loss: 0.9682, reg_loss: -0.0652 ...
+Iter: 6000; Elasped: 4:13:31; ETA: 1 day, 14:01:39; Itertime: 2.53; LR: 5.457e-05;
+ overall_loss: 0.1228, cls_loss: 0.0562, cls_acc: 0.826,  cls_aux_loss: 0.0665, cls_aux_acc: 0.789, seg_loss: 4.4116, cam_loss: 0.9585, reg_loss: -0.0668 ...
+Iter: 6200; Elasped: 4:21:57; ETA: 1 day, 13:53:03; Itertime: 2.53; LR: 5.439e-05;
+ overall_loss: 0.1237, cls_loss: 0.0568, cls_acc: 0.832,  cls_aux_loss: 0.0669, cls_aux_acc: 0.791, seg_loss: 4.4187, cam_loss: 0.9604, reg_loss: -0.0665 ...
+Iter: 6400; Elasped: 4:30:23; ETA: 1 day, 13:44:27; Itertime: 2.53; LR: 5.421e-05;
+ overall_loss: 0.1293, cls_loss: 0.0592, cls_acc: 0.826,  cls_aux_loss: 0.0701, cls_aux_acc: 0.786, seg_loss: 4.3995, cam_loss: 0.9562, reg_loss: -0.0655 ...
+Iter: 6600; Elasped: 4:38:50; ETA: 1 day, 13:36:00; Itertime: 2.53; LR: 5.403e-05;
+ overall_loss: 0.1247, cls_loss: 0.0569, cls_acc: 0.826,  cls_aux_loss: 0.0678, cls_aux_acc: 0.782, seg_loss: 4.4035, cam_loss: 0.9600, reg_loss: -0.0689 ...
+Iter: 6800; Elasped: 4:47:16; ETA: 1 day, 13:27:26; Itertime: 2.53; LR: 5.384e-05;
+ overall_loss: 0.1292, cls_loss: 0.0585, cls_acc: 0.823,  cls_aux_loss: 0.0707, cls_aux_acc: 0.780, seg_loss: 4.4029, cam_loss: 0.9650, reg_loss: -0.0655 ...
+Iter: 7000; Elasped: 4:55:42; ETA: 1 day, 13:18:52; Itertime: 2.53; LR: 5.366e-05;
+ overall_loss: 0.1219, cls_loss: 0.0560, cls_acc: 0.827,  cls_aux_loss: 0.0659, cls_aux_acc: 0.784, seg_loss: 4.3831, cam_loss: 0.9473, reg_loss: -0.0678 ...
+Iter: 7200; Elasped: 5:04:10; ETA: 1 day, 13:10:33; Itertime: 2.54; LR: 5.348e-05;
+ overall_loss: 0.1244, cls_loss: 0.0566, cls_acc: 0.822,  cls_aux_loss: 0.0677, cls_aux_acc: 0.779, seg_loss: 4.3917, cam_loss: 0.9530, reg_loss: -0.0683 ...
+Iter: 7400; Elasped: 5:12:36; ETA: 1 day, 13:01:59; Itertime: 2.53; LR: 5.330e-05;
+ overall_loss: 0.1269, cls_loss: 0.0584, cls_acc: 0.815,  cls_aux_loss: 0.0686, cls_aux_acc: 0.780, seg_loss: 4.4016, cam_loss: 0.9690, reg_loss: -0.0713 ...
+Iter: 7600; Elasped: 5:21:02; ETA: 1 day, 12:53:26; Itertime: 2.53; LR: 5.312e-05;
+ overall_loss: 0.1218, cls_loss: 0.0559, cls_acc: 0.824,  cls_aux_loss: 0.0658, cls_aux_acc: 0.790, seg_loss: 4.3813, cam_loss: 0.9603, reg_loss: -0.0658 ...
+Iter: 7800; Elasped: 5:29:29; ETA: 1 day, 12:45:00; Itertime: 2.53; LR: 5.293e-05;
+ overall_loss: 0.1230, cls_loss: 0.0566, cls_acc: 0.827,  cls_aux_loss: 0.0663, cls_aux_acc: 0.788, seg_loss: 4.3835, cam_loss: 0.9616, reg_loss: -0.0681 ...
+Iter: 8000; Elasped: 5:37:57; ETA: 1 day, 12:36:40; Itertime: 2.54; LR: 5.275e-05;
+ overall_loss: 0.1272, cls_loss: 0.0585, cls_acc: 0.838,  cls_aux_loss: 0.0687, cls_aux_acc: 0.801, seg_loss: 4.3856, cam_loss: 0.9547, reg_loss: -0.0709 ...
+Iter: 8200; Elasped: 5:46:23; ETA: 1 day, 12:28:07; Itertime: 2.53; LR: 5.257e-05;
+ overall_loss: 0.1314, cls_loss: 0.0603, cls_acc: 0.813,  cls_aux_loss: 0.0711, cls_aux_acc: 0.769, seg_loss: 4.3963, cam_loss: 0.9366, reg_loss: -0.0666 ...
+Iter: 8400; Elasped: 5:54:49; ETA: 1 day, 12:19:35; Itertime: 2.53; LR: 5.239e-05;
+ overall_loss: 0.1246, cls_loss: 0.0565, cls_acc: 0.828,  cls_aux_loss: 0.0681, cls_aux_acc: 0.784, seg_loss: 4.4060, cam_loss: 0.9473, reg_loss: -0.0678 ...
+Iter: 8600; Elasped: 6:03:15; ETA: 1 day, 12:11:03; Itertime: 2.53; LR: 5.220e-05;
+ overall_loss: 0.1250, cls_loss: 0.0575, cls_acc: 0.825,  cls_aux_loss: 0.0675, cls_aux_acc: 0.782, seg_loss: 4.3772, cam_loss: 0.9352, reg_loss: -0.0692 ...
+Iter: 8800; Elasped: 6:11:41; ETA: 1 day, 12:02:31; Itertime: 2.53; LR: 5.202e-05;
+ overall_loss: 0.1214, cls_loss: 0.0556, cls_acc: 0.834,  cls_aux_loss: 0.0658, cls_aux_acc: 0.785, seg_loss: 4.3822, cam_loss: 0.9407, reg_loss: -0.0657 ...
+Iter: 9000; Elasped: 6:20:07; ETA: 1 day, 11:53:59; Itertime: 2.53; LR: 5.184e-05;
+ overall_loss: 0.1169, cls_loss: 0.0534, cls_acc: 0.837,  cls_aux_loss: 0.0635, cls_aux_acc: 0.803, seg_loss: 4.4119, cam_loss: 0.9384, reg_loss: -0.0676 ...
+Iter: 9200; Elasped: 6:28:33; ETA: 1 day, 11:45:28; Itertime: 2.53; LR: 5.165e-05;
+ overall_loss: 0.1226, cls_loss: 0.0559, cls_acc: 0.830,  cls_aux_loss: 0.0667, cls_aux_acc: 0.795, seg_loss: 4.3995, cam_loss: 0.9468, reg_loss: -0.0669 ...
+Iter: 9400; Elasped: 6:36:58; ETA: 1 day, 11:36:51; Itertime: 2.53; LR: 5.147e-05;
+ overall_loss: 0.1232, cls_loss: 0.0562, cls_acc: 0.825,  cls_aux_loss: 0.0670, cls_aux_acc: 0.784, seg_loss: 4.3951, cam_loss: 0.9476, reg_loss: -0.0677 ...
+Iter: 9600; Elasped: 6:45:23; ETA: 1 day, 11:28:15; Itertime: 2.53; LR: 5.129e-05;
+ overall_loss: 0.1258, cls_loss: 0.0580, cls_acc: 0.832,  cls_aux_loss: 0.0678, cls_aux_acc: 0.798, seg_loss: 4.3877, cam_loss: 0.9545, reg_loss: -0.0652 ...
+Iter: 9800; Elasped: 6:53:51; ETA: 1 day, 11:19:55; Itertime: 2.54; LR: 5.110e-05;
+ overall_loss: 0.1317, cls_loss: 0.0598, cls_acc: 0.822,  cls_aux_loss: 0.0719, cls_aux_acc: 0.774, seg_loss: 4.4141, cam_loss: 0.9460, reg_loss: -0.0679 ...
+Iter: 10000; Elasped: 7:02:18; ETA: 1 day, 11:11:30; Itertime: 2.54; LR: 5.092e-05;
+ overall_loss: 0.1194, cls_loss: 0.0553, cls_acc: 0.837,  cls_aux_loss: 0.0641, cls_aux_acc: 0.810, seg_loss: 4.3989, cam_loss: 0.9463, reg_loss: -0.0656 ...
+Iter: 10200; Elasped: 7:10:45; ETA: 1 day, 11:03:04; Itertime: 2.53; LR: 5.074e-05;
+ overall_loss: 0.3215, cls_loss: 0.0599, cls_acc: 0.830,  cls_aux_loss: 0.0667, cls_aux_acc: 0.805, seg_loss: 2.5858, cam_loss: 0.8123, reg_loss: -2.0384 ...
+Iter: 10400; Elasped: 7:19:12; ETA: 1 day, 10:54:38; Itertime: 2.54; LR: 5.055e-05;
+ overall_loss: 0.2293, cls_loss: 0.0567, cls_acc: 0.826,  cls_aux_loss: 0.0651, cls_aux_acc: 0.792, seg_loss: 1.8931, cam_loss: 0.7863, reg_loss: -2.4216 ...
+Iter: 10600; Elasped: 7:27:40; ETA: 1 day, 10:46:17; Itertime: 2.54; LR: 5.037e-05;
+ overall_loss: 0.2026, cls_loss: 0.0595, cls_acc: 0.821,  cls_aux_loss: 0.0675, cls_aux_acc: 0.787, seg_loss: 1.6703, cam_loss: 0.7690, reg_loss: -2.5978 ...
+Iter: 10800; Elasped: 7:36:07; ETA: 1 day, 10:37:51; Itertime: 2.54; LR: 5.019e-05;
+ overall_loss: 0.1980, cls_loss: 0.0582, cls_acc: 0.842,  cls_aux_loss: 0.0677, cls_aux_acc: 0.804, seg_loss: 1.5416, cam_loss: 0.7631, reg_loss: -2.4049 ...
+Iter: 11000; Elasped: 7:44:34; ETA: 1 day, 10:29:26; Itertime: 2.53; LR: 5.000e-05;
+ overall_loss: 0.1761, cls_loss: 0.0582, cls_acc: 0.829,  cls_aux_loss: 0.0689, cls_aux_acc: 0.795, seg_loss: 1.4208, cam_loss: 0.7516, reg_loss: -2.6147 ...
+Iter: 11200; Elasped: 7:53:01; ETA: 1 day, 10:21:00; Itertime: 2.54; LR: 4.982e-05;
+ overall_loss: 0.1752, cls_loss: 0.0581, cls_acc: 0.835,  cls_aux_loss: 0.0681, cls_aux_acc: 0.800, seg_loss: 1.2993, cam_loss: 0.7448, reg_loss: -2.3644 ...
+Iter: 11400; Elasped: 8:01:29; ETA: 1 day, 10:12:38; Itertime: 2.54; LR: 4.964e-05;
+ overall_loss: 0.1774, cls_loss: 0.0606, cls_acc: 0.828,  cls_aux_loss: 0.0718, cls_aux_acc: 0.793, seg_loss: 1.2734, cam_loss: 0.7385, reg_loss: -2.3854 ...
+Iter: 11600; Elasped: 8:09:56; ETA: 1 day, 10:04:12; Itertime: 2.53; LR: 4.945e-05;
+ overall_loss: 0.1469, cls_loss: 0.0553, cls_acc: 0.837,  cls_aux_loss: 0.0638, cls_aux_acc: 0.809, seg_loss: 1.1430, cam_loss: 0.7298, reg_loss: -2.4587 ...
+Iter: 11800; Elasped: 8:18:23; ETA: 1 day, 9:55:46; Itertime: 2.54; LR: 4.927e-05;
+ overall_loss: 0.1501, cls_loss: 0.0569, cls_acc: 0.819,  cls_aux_loss: 0.0665, cls_aux_acc: 0.780, seg_loss: 1.0973, cam_loss: 0.7258, reg_loss: -2.3850 ...
+Iter: 12000; Elasped: 8:26:51; ETA: 1 day, 9:47:24; Itertime: 2.54; LR: 4.908e-05;
+ overall_loss: 0.1578, cls_loss: 0.0565, cls_acc: 0.835,  cls_aux_loss: 0.0658, cls_aux_acc: 0.804, seg_loss: 1.0448, cam_loss: 0.7231, reg_loss: -2.1019 ...
+Iter: 12200; Elasped: 8:35:17; ETA: 1 day, 9:38:53; Itertime: 2.53; LR: 4.890e-05;
+ overall_loss: 0.1564, cls_loss: 0.0571, cls_acc: 0.832,  cls_aux_loss: 0.0665, cls_aux_acc: 0.795, seg_loss: 0.9995, cam_loss: 0.7199, reg_loss: -2.0636 ...
+Iter: 12400; Elasped: 8:43:44; ETA: 1 day, 9:30:27; Itertime: 2.53; LR: 4.872e-05;
+ overall_loss: 0.1564, cls_loss: 0.0575, cls_acc: 0.828,  cls_aux_loss: 0.0676, cls_aux_acc: 0.794, seg_loss: 0.9124, cam_loss: 0.7164, reg_loss: -1.9162 ...
+Iter: 12600; Elasped: 8:52:11; ETA: 1 day, 9:22:01; Itertime: 2.54; LR: 4.853e-05;
+ overall_loss: 0.1435, cls_loss: 0.0527, cls_acc: 0.839,  cls_aux_loss: 0.0611, cls_aux_acc: 0.804, seg_loss: 0.8157, cam_loss: 0.7146, reg_loss: -1.7528 ...
+Iter: 12800; Elasped: 9:00:38; ETA: 1 day, 9:13:35; Itertime: 2.54; LR: 4.835e-05;
+ overall_loss: 0.1568, cls_loss: 0.0550, cls_acc: 0.840,  cls_aux_loss: 0.0646, cls_aux_acc: 0.809, seg_loss: 0.8451, cam_loss: 0.7108, reg_loss: -1.6569 ...
+Iter: 13000; Elasped: 9:09:05; ETA: 1 day, 9:05:08; Itertime: 2.54; LR: 4.816e-05;
+ overall_loss: 0.1558, cls_loss: 0.0581, cls_acc: 0.828,  cls_aux_loss: 0.0673, cls_aux_acc: 0.798, seg_loss: 0.7761, cam_loss: 0.7096, reg_loss: -1.6539 ...
+Iter: 13200; Elasped: 9:17:32; ETA: 1 day, 8:56:42; Itertime: 2.54; LR: 4.798e-05;
+ overall_loss: 0.1546, cls_loss: 0.0533, cls_acc: 0.842,  cls_aux_loss: 0.0625, cls_aux_acc: 0.807, seg_loss: 0.7604, cam_loss: 0.7076, reg_loss: -1.4507 ...
+Iter: 13400; Elasped: 9:25:58; ETA: 1 day, 8:48:12; Itertime: 2.53; LR: 4.779e-05;
+ overall_loss: 0.1566, cls_loss: 0.0532, cls_acc: 0.851,  cls_aux_loss: 0.0615, cls_aux_acc: 0.814, seg_loss: 0.7335, cam_loss: 0.7070, reg_loss: -1.3383 ...
+Iter: 13600; Elasped: 9:34:25; ETA: 1 day, 8:39:46; Itertime: 2.53; LR: 4.761e-05;
+ overall_loss: 0.1693, cls_loss: 0.0562, cls_acc: 0.841,  cls_aux_loss: 0.0655, cls_aux_acc: 0.804, seg_loss: 0.7666, cam_loss: 0.7057, reg_loss: -1.2881 ...
+Iter: 13800; Elasped: 9:42:51; ETA: 1 day, 8:31:16; Itertime: 2.53; LR: 4.742e-05;
+ overall_loss: 0.1605, cls_loss: 0.0525, cls_acc: 0.851,  cls_aux_loss: 0.0609, cls_aux_acc: 0.818, seg_loss: 0.7129, cam_loss: 0.7050, reg_loss: -1.1870 ...
+Iter: 14000; Elasped: 9:51:18; ETA: 1 day, 8:22:50; Itertime: 2.53; LR: 4.724e-05;
+ overall_loss: 0.1644, cls_loss: 0.0551, cls_acc: 0.840,  cls_aux_loss: 0.0640, cls_aux_acc: 0.803, seg_loss: 0.6783, cam_loss: 0.7036, reg_loss: -1.1557 ...
+Iter: 14200; Elasped: 9:59:46; ETA: 1 day, 8:14:27; Itertime: 2.54; LR: 4.705e-05;
+ overall_loss: 0.1783, cls_loss: 0.0585, cls_acc: 0.842,  cls_aux_loss: 0.0675, cls_aux_acc: 0.811, seg_loss: 0.6996, cam_loss: 0.7035, reg_loss: -1.0575 ...
+Iter: 14400; Elasped: 10:08:11; ETA: 1 day, 8:05:54; Itertime: 2.53; LR: 4.687e-05;
+ overall_loss: 0.1719, cls_loss: 0.0541, cls_acc: 0.847,  cls_aux_loss: 0.0638, cls_aux_acc: 0.811, seg_loss: 0.6819, cam_loss: 0.7025, reg_loss: -0.9874 ...
+Iter: 14600; Elasped: 10:16:39; ETA: 1 day, 7:57:31; Itertime: 2.54; LR: 4.668e-05;
+ overall_loss: 0.1709, cls_loss: 0.0553, cls_acc: 0.849,  cls_aux_loss: 0.0656, cls_aux_acc: 0.807, seg_loss: 0.6250, cam_loss: 0.7025, reg_loss: -0.9528 ...
+Iter: 14800; Elasped: 10:25:04; ETA: 1 day, 7:48:59; Itertime: 2.53; LR: 4.650e-05;
+ overall_loss: 0.1707, cls_loss: 0.0557, cls_acc: 0.849,  cls_aux_loss: 0.0645, cls_aux_acc: 0.813, seg_loss: 0.6472, cam_loss: 0.7020, reg_loss: -0.9869 ...
+Iter: 15000; Elasped: 10:33:30; ETA: 1 day, 7:40:30; Itertime: 2.53; LR: 4.631e-05;
+ overall_loss: 0.1587, cls_loss: 0.0501, cls_acc: 0.859,  cls_aux_loss: 0.0576, cls_aux_acc: 0.829, seg_loss: 0.5712, cam_loss: 0.7015, reg_loss: -0.8249 ...
+Iter: 15200; Elasped: 10:41:57; ETA: 1 day, 7:32:03; Itertime: 2.53; LR: 4.613e-05;
+ overall_loss: 0.1710, cls_loss: 0.0546, cls_acc: 0.841,  cls_aux_loss: 0.0644, cls_aux_acc: 0.805, seg_loss: 0.6100, cam_loss: 0.7008, reg_loss: -0.8804 ...
+Iter: 15400; Elasped: 10:50:24; ETA: 1 day, 7:23:37; Itertime: 2.54; LR: 4.594e-05;
+ overall_loss: 0.1699, cls_loss: 0.0524, cls_acc: 0.844,  cls_aux_loss: 0.0616, cls_aux_acc: 0.812, seg_loss: 0.6088, cam_loss: 0.7003, reg_loss: -0.7998 ...
+Iter: 15600; Elasped: 10:58:52; ETA: 1 day, 7:15:14; Itertime: 2.54; LR: 4.576e-05;
+ overall_loss: 0.1767, cls_loss: 0.0554, cls_acc: 0.847,  cls_aux_loss: 0.0647, cls_aux_acc: 0.812, seg_loss: 0.5800, cam_loss: 0.7000, reg_loss: -0.7272 ...
+Iter: 15800; Elasped: 11:07:19; ETA: 1 day, 7:06:47; Itertime: 2.54; LR: 4.557e-05;
+ overall_loss: 0.1681, cls_loss: 0.0518, cls_acc: 0.857,  cls_aux_loss: 0.0597, cls_aux_acc: 0.829, seg_loss: 0.5834, cam_loss: 0.7005, reg_loss: -0.7346 ...
+Iter: 16000; Elasped: 11:15:45; ETA: 1 day, 6:58:18; Itertime: 2.53; LR: 4.539e-05;
+ overall_loss: 0.1802, cls_loss: 0.0562, cls_acc: 0.833,  cls_aux_loss: 0.0649, cls_aux_acc: 0.805, seg_loss: 0.6454, cam_loss: 0.6996, reg_loss: -0.8091 ...
+Iter: 16200; Elasped: 11:24:12; ETA: 1 day, 6:49:52; Itertime: 2.53; LR: 4.520e-05;
+ overall_loss: 0.1695, cls_loss: 0.0521, cls_acc: 0.841,  cls_aux_loss: 0.0614, cls_aux_acc: 0.807, seg_loss: 0.5773, cam_loss: 0.6999, reg_loss: -0.7348 ...
+Iter: 16400; Elasped: 11:32:39; ETA: 1 day, 6:41:26; Itertime: 2.54; LR: 4.502e-05;
+ overall_loss: 0.1792, cls_loss: 0.0580, cls_acc: 0.827,  cls_aux_loss: 0.0657, cls_aux_acc: 0.806, seg_loss: 0.5594, cam_loss: 0.6991, reg_loss: -0.7072 ...
+Iter: 16600; Elasped: 11:41:05; ETA: 1 day, 6:32:57; Itertime: 2.53; LR: 4.483e-05;
+ overall_loss: 0.1725, cls_loss: 0.0550, cls_acc: 0.836,  cls_aux_loss: 0.0633, cls_aux_acc: 0.798, seg_loss: 0.5295, cam_loss: 0.6986, reg_loss: -0.6725 ...
+Iter: 16800; Elasped: 11:49:31; ETA: 1 day, 6:24:28; Itertime: 2.53; LR: 4.464e-05;
+ overall_loss: 0.1720, cls_loss: 0.0539, cls_acc: 0.851,  cls_aux_loss: 0.0618, cls_aux_acc: 0.823, seg_loss: 0.5641, cam_loss: 0.6995, reg_loss: -0.7038 ...
+Iter: 17000; Elasped: 11:57:58; ETA: 1 day, 6:16:02; Itertime: 2.53; LR: 4.446e-05;
+ overall_loss: 0.1726, cls_loss: 0.0536, cls_acc: 0.845,  cls_aux_loss: 0.0621, cls_aux_acc: 0.812, seg_loss: 0.5690, cam_loss: 0.6991, reg_loss: -0.7005 ...
+Iter: 17200; Elasped: 12:06:24; ETA: 1 day, 6:07:33; Itertime: 2.53; LR: 4.427e-05;
+ overall_loss: 0.1718, cls_loss: 0.0540, cls_acc: 0.845,  cls_aux_loss: 0.0630, cls_aux_acc: 0.814, seg_loss: 0.5153, cam_loss: 0.6992, reg_loss: -0.6340 ...
+Iter: 17400; Elasped: 12:14:50; ETA: 1 day, 5:59:04; Itertime: 2.53; LR: 4.409e-05;
+ overall_loss: 0.1663, cls_loss: 0.0532, cls_acc: 0.844,  cls_aux_loss: 0.0613, cls_aux_acc: 0.815, seg_loss: 0.5208, cam_loss: 0.6982, reg_loss: -0.7029 ...
+Iter: 17600; Elasped: 12:23:17; ETA: 1 day, 5:50:38; Itertime: 2.54; LR: 4.390e-05;
+ overall_loss: 0.1634, cls_loss: 0.0508, cls_acc: 0.850,  cls_aux_loss: 0.0587, cls_aux_acc: 0.820, seg_loss: 0.5017, cam_loss: 0.6987, reg_loss: -0.6238 ...
+Iter: 17800; Elasped: 12:31:43; ETA: 1 day, 5:42:09; Itertime: 2.53; LR: 4.371e-05;
+ overall_loss: 0.1633, cls_loss: 0.0517, cls_acc: 0.851,  cls_aux_loss: 0.0599, cls_aux_acc: 0.820, seg_loss: 0.4846, cam_loss: 0.6982, reg_loss: -0.6319 ...
+Iter: 18000; Elasped: 12:40:11; ETA: 1 day, 5:33:45; Itertime: 2.54; LR: 4.353e-05;
+ overall_loss: 0.1586, cls_loss: 0.0494, cls_acc: 0.862,  cls_aux_loss: 0.0570, cls_aux_acc: 0.835, seg_loss: 0.4750, cam_loss: 0.6979, reg_loss: -0.6043 ...
+Iter: 18200; Elasped: 12:48:37; ETA: 1 day, 5:25:17; Itertime: 2.53; LR: 4.334e-05;
+ overall_loss: 0.1617, cls_loss: 0.0505, cls_acc: 0.858,  cls_aux_loss: 0.0591, cls_aux_acc: 0.824, seg_loss: 0.4538, cam_loss: 0.6977, reg_loss: -0.5633 ...
+Iter: 18400; Elasped: 12:57:03; ETA: 1 day, 5:16:48; Itertime: 2.53; LR: 4.315e-05;
+ overall_loss: 0.1686, cls_loss: 0.0524, cls_acc: 0.843,  cls_aux_loss: 0.0610, cls_aux_acc: 0.812, seg_loss: 0.5170, cam_loss: 0.6972, reg_loss: -0.6263 ...
+Iter: 18600; Elasped: 13:05:30; ETA: 1 day, 5:08:22; Itertime: 2.53; LR: 4.297e-05;
+ overall_loss: 0.1578, cls_loss: 0.0494, cls_acc: 0.866,  cls_aux_loss: 0.0570, cls_aux_acc: 0.842, seg_loss: 0.4320, cam_loss: 0.6978, reg_loss: -0.5347 ...
+Iter: 18800; Elasped: 13:13:56; ETA: 1 day, 4:59:53; Itertime: 2.53; LR: 4.278e-05;
+ overall_loss: 0.1663, cls_loss: 0.0534, cls_acc: 0.849,  cls_aux_loss: 0.0614, cls_aux_acc: 0.817, seg_loss: 0.4442, cam_loss: 0.6968, reg_loss: -0.5553 ...
+Iter: 19000; Elasped: 13:22:23; ETA: 1 day, 4:51:27; Itertime: 2.53; LR: 4.259e-05;
+ overall_loss: 0.1687, cls_loss: 0.0541, cls_acc: 0.846,  cls_aux_loss: 0.0622, cls_aux_acc: 0.817, seg_loss: 0.4586, cam_loss: 0.6973, reg_loss: -0.5671 ...
+Iter: 19200; Elasped: 13:30:51; ETA: 1 day, 4:43:03; Itertime: 2.54; LR: 4.241e-05;
+ overall_loss: 0.1656, cls_loss: 0.0516, cls_acc: 0.848,  cls_aux_loss: 0.0593, cls_aux_acc: 0.818, seg_loss: 0.4656, cam_loss: 0.6975, reg_loss: -0.5337 ...
+Iter: 19400; Elasped: 13:39:17; ETA: 1 day, 4:34:34; Itertime: 2.53; LR: 4.222e-05;
+ overall_loss: 0.1661, cls_loss: 0.0514, cls_acc: 0.853,  cls_aux_loss: 0.0590, cls_aux_acc: 0.827, seg_loss: 0.4766, cam_loss: 0.6975, reg_loss: -0.5378 ...
+Iter: 19600; Elasped: 13:47:43; ETA: 1 day, 4:26:06; Itertime: 2.53; LR: 4.203e-05;
+ overall_loss: 0.1570, cls_loss: 0.0490, cls_acc: 0.860,  cls_aux_loss: 0.0571, cls_aux_acc: 0.825, seg_loss: 0.4492, cam_loss: 0.6974, reg_loss: -0.5773 ...
+Iter: 19800; Elasped: 13:56:10; ETA: 1 day, 4:17:40; Itertime: 2.53; LR: 4.184e-05;
+ overall_loss: 0.1640, cls_loss: 0.0517, cls_acc: 0.849,  cls_aux_loss: 0.0602, cls_aux_acc: 0.822, seg_loss: 0.4742, cam_loss: 0.6970, reg_loss: -0.6019 ...
+Iter: 20000; Elasped: 14:04:37; ETA: 1 day, 4:09:14; Itertime: 2.54; LR: 4.166e-05;
+ overall_loss: 0.1695, cls_loss: 0.0539, cls_acc: 0.845,  cls_aux_loss: 0.0630, cls_aux_acc: 0.816, seg_loss: 0.4677, cam_loss: 0.6971, reg_loss: -0.5826 ...
+Iter: 20200; Elasped: 14:13:04; ETA: 1 day, 4:00:47; Itertime: 2.53; LR: 4.147e-05;
+ overall_loss: 0.1701, cls_loss: 0.0542, cls_acc: 0.850,  cls_aux_loss: 0.0616, cls_aux_acc: 0.827, seg_loss: 0.4414, cam_loss: 0.6969, reg_loss: -0.4942 ...
+Iter: 20400; Elasped: 14:21:31; ETA: 1 day, 3:52:21; Itertime: 2.53; LR: 4.128e-05;
+ overall_loss: 0.1756, cls_loss: 0.0546, cls_acc: 0.851,  cls_aux_loss: 0.0635, cls_aux_acc: 0.821, seg_loss: 0.4846, cam_loss: 0.6967, reg_loss: -0.5154 ...
+Iter: 20600; Elasped: 14:29:54; ETA: 1 day, 3:43:47; Itertime: 2.52; LR: 4.109e-05;
+ overall_loss: 0.1610, cls_loss: 0.0512, cls_acc: 0.844,  cls_aux_loss: 0.0587, cls_aux_acc: 0.813, seg_loss: 0.4570, cam_loss: 0.6970, reg_loss: -0.5904 ...
+Iter: 20800; Elasped: 14:38:20; ETA: 1 day, 3:35:19; Itertime: 2.53; LR: 4.091e-05;
+ overall_loss: 0.1556, cls_loss: 0.0487, cls_acc: 0.862,  cls_aux_loss: 0.0549, cls_aux_acc: 0.833, seg_loss: 0.4303, cam_loss: 0.6966, reg_loss: -0.5168 ...
+Iter: 21000; Elasped: 14:46:44; ETA: 1 day, 3:26:47; Itertime: 2.52; LR: 4.072e-05;
+ overall_loss: 0.1502, cls_loss: 0.0470, cls_acc: 0.870,  cls_aux_loss: 0.0534, cls_aux_acc: 0.849, seg_loss: 0.4071, cam_loss: 0.6966, reg_loss: -0.5132 ...
+Iter: 21200; Elasped: 14:55:09; ETA: 1 day, 3:18:17; Itertime: 2.52; LR: 4.053e-05;
+ overall_loss: 0.1563, cls_loss: 0.0492, cls_acc: 0.870,  cls_aux_loss: 0.0557, cls_aux_acc: 0.849, seg_loss: 0.4258, cam_loss: 0.6971, reg_loss: -0.5205 ...
+Iter: 21400; Elasped: 15:03:34; ETA: 1 day, 3:09:47; Itertime: 2.52; LR: 4.034e-05;
+ overall_loss: 0.1515, cls_loss: 0.0481, cls_acc: 0.866,  cls_aux_loss: 0.0544, cls_aux_acc: 0.846, seg_loss: 0.4028, cam_loss: 0.6965, reg_loss: -0.5229 ...
+Iter: 21600; Elasped: 15:11:59; ETA: 1 day, 3:01:18; Itertime: 2.52; LR: 4.015e-05;
+ overall_loss: 0.1520, cls_loss: 0.0490, cls_acc: 0.874,  cls_aux_loss: 0.0560, cls_aux_acc: 0.842, seg_loss: 0.4159, cam_loss: 0.6966, reg_loss: -0.5879 ...
+Iter: 21800; Elasped: 15:20:21; ETA: 1 day, 2:52:43; Itertime: 2.51; LR: 3.997e-05;
+ overall_loss: 0.1620, cls_loss: 0.0517, cls_acc: 0.868,  cls_aux_loss: 0.0589, cls_aux_acc: 0.840, seg_loss: 0.4301, cam_loss: 0.6966, reg_loss: -0.5285 ...
+Iter: 22000; Elasped: 15:28:46; ETA: 1 day, 2:44:14; Itertime: 2.52; LR: 3.978e-05;
+ overall_loss: 0.1589, cls_loss: 0.0524, cls_acc: 0.864,  cls_aux_loss: 0.0591, cls_aux_acc: 0.841, seg_loss: 0.3893, cam_loss: 0.6970, reg_loss: -0.5262 ...
+Iter: 22200; Elasped: 15:37:11; ETA: 1 day, 2:35:44; Itertime: 2.53; LR: 3.959e-05;
+ overall_loss: 0.1559, cls_loss: 0.0487, cls_acc: 0.869,  cls_aux_loss: 0.0559, cls_aux_acc: 0.837, seg_loss: 0.4200, cam_loss: 0.6967, reg_loss: -0.5122 ...
+Iter: 22400; Elasped: 15:45:36; ETA: 1 day, 2:27:15; Itertime: 2.52; LR: 3.940e-05;
+ overall_loss: 0.1598, cls_loss: 0.0510, cls_acc: 0.863,  cls_aux_loss: 0.0579, cls_aux_acc: 0.837, seg_loss: 0.4206, cam_loss: 0.6966, reg_loss: -0.5188 ...
+Iter: 22600; Elasped: 15:54:00; ETA: 1 day, 2:18:44; Itertime: 2.52; LR: 3.921e-05;
+ overall_loss: 0.1605, cls_loss: 0.0506, cls_acc: 0.862,  cls_aux_loss: 0.0580, cls_aux_acc: 0.832, seg_loss: 0.4566, cam_loss: 0.6970, reg_loss: -0.5731 ...
+Iter: 22800; Elasped: 16:02:25; ETA: 1 day, 2:10:15; Itertime: 2.52; LR: 3.902e-05;
+ overall_loss: 0.1598, cls_loss: 0.0509, cls_acc: 0.862,  cls_aux_loss: 0.0582, cls_aux_acc: 0.829, seg_loss: 0.4010, cam_loss: 0.6959, reg_loss: -0.4842 ...
+Iter: 23000; Elasped: 16:10:49; ETA: 1 day, 2:01:44; Itertime: 2.52; LR: 3.883e-05;
+ overall_loss: 0.1617, cls_loss: 0.0517, cls_acc: 0.858,  cls_aux_loss: 0.0581, cls_aux_acc: 0.832, seg_loss: 0.4114, cam_loss: 0.6960, reg_loss: -0.4814 ...
+Iter: 23200; Elasped: 16:19:14; ETA: 1 day, 1:53:16; Itertime: 2.52; LR: 3.864e-05;
+ overall_loss: 0.1592, cls_loss: 0.0501, cls_acc: 0.865,  cls_aux_loss: 0.0567, cls_aux_acc: 0.834, seg_loss: 0.4255, cam_loss: 0.6958, reg_loss: -0.4995 ...
+Iter: 23400; Elasped: 16:27:38; ETA: 1 day, 1:44:45; Itertime: 2.52; LR: 3.846e-05;
+ overall_loss: 0.1674, cls_loss: 0.0538, cls_acc: 0.856,  cls_aux_loss: 0.0621, cls_aux_acc: 0.831, seg_loss: 0.4257, cam_loss: 0.6964, reg_loss: -0.5175 ...
+Iter: 23600; Elasped: 16:36:02; ETA: 1 day, 1:36:15; Itertime: 2.52; LR: 3.827e-05;
+ overall_loss: 0.1560, cls_loss: 0.0506, cls_acc: 0.861,  cls_aux_loss: 0.0580, cls_aux_acc: 0.835, seg_loss: 0.3869, cam_loss: 0.6961, reg_loss: -0.5215 ...
+Iter: 23800; Elasped: 16:44:26; ETA: 1 day, 1:27:45; Itertime: 2.52; LR: 3.808e-05;
+ overall_loss: 0.1551, cls_loss: 0.0504, cls_acc: 0.856,  cls_aux_loss: 0.0572, cls_aux_acc: 0.831, seg_loss: 0.4124, cam_loss: 0.6960, reg_loss: -0.5699 ...
+Iter: 24000; Elasped: 16:52:50; ETA: 1 day, 1:19:15; Itertime: 2.52; LR: 3.789e-05;
+ overall_loss: 0.1487, cls_loss: 0.0482, cls_acc: 0.870,  cls_aux_loss: 0.0557, cls_aux_acc: 0.844, seg_loss: 0.3620, cam_loss: 0.6960, reg_loss: -0.5246 ...
+Iter: 24200; Elasped: 17:01:16; ETA: 1 day, 1:10:47; Itertime: 2.53; LR: 3.770e-05;
+ overall_loss: 0.1575, cls_loss: 0.0520, cls_acc: 0.856,  cls_aux_loss: 0.0593, cls_aux_acc: 0.833, seg_loss: 0.3898, cam_loss: 0.6957, reg_loss: -0.5524 ...
+Iter: 24400; Elasped: 17:09:40; ETA: 1 day, 1:02:18; Itertime: 2.52; LR: 3.751e-05;
+ overall_loss: 0.1570, cls_loss: 0.0509, cls_acc: 0.860,  cls_aux_loss: 0.0580, cls_aux_acc: 0.838, seg_loss: 0.3878, cam_loss: 0.6962, reg_loss: -0.5093 ...
+Iter: 24600; Elasped: 17:18:04; ETA: 1 day, 0:53:48; Itertime: 2.52; LR: 3.732e-05;
+ overall_loss: 0.1552, cls_loss: 0.0487, cls_acc: 0.865,  cls_aux_loss: 0.0559, cls_aux_acc: 0.842, seg_loss: 0.4254, cam_loss: 0.6962, reg_loss: -0.5343 ...
+Iter: 24800; Elasped: 17:26:29; ETA: 1 day, 0:45:19; Itertime: 2.53; LR: 3.713e-05;
+ overall_loss: 0.1493, cls_loss: 0.0473, cls_acc: 0.878,  cls_aux_loss: 0.0551, cls_aux_acc: 0.851, seg_loss: 0.3774, cam_loss: 0.6964, reg_loss: -0.5126 ...
+Iter: 25000; Elasped: 17:34:53; ETA: 1 day, 0:36:50; Itertime: 2.52; LR: 3.694e-05;
+ overall_loss: 0.1590, cls_loss: 0.0507, cls_acc: 0.866,  cls_aux_loss: 0.0590, cls_aux_acc: 0.834, seg_loss: 0.4144, cam_loss: 0.6963, reg_loss: -0.5372 ...
+Iter: 25200; Elasped: 17:43:17; ETA: 1 day, 0:28:20; Itertime: 2.52; LR: 3.675e-05;
+ overall_loss: 0.1542, cls_loss: 0.0507, cls_acc: 0.863,  cls_aux_loss: 0.0573, cls_aux_acc: 0.839, seg_loss: 0.3590, cam_loss: 0.6956, reg_loss: -0.4879 ...
+Iter: 25400; Elasped: 17:51:41; ETA: 1 day, 0:19:51; Itertime: 2.52; LR: 3.656e-05;
+ overall_loss: 0.1456, cls_loss: 0.0467, cls_acc: 0.877,  cls_aux_loss: 0.0534, cls_aux_acc: 0.853, seg_loss: 0.3438, cam_loss: 0.6958, reg_loss: -0.4744 ...
+Iter: 25600; Elasped: 18:00:07; ETA: 1 day, 0:11:24; Itertime: 2.53; LR: 3.637e-05;
+ overall_loss: 0.1516, cls_loss: 0.0490, cls_acc: 0.864,  cls_aux_loss: 0.0564, cls_aux_acc: 0.844, seg_loss: 0.3576, cam_loss: 0.6958, reg_loss: -0.4876 ...
+Iter: 25800; Elasped: 18:08:31; ETA: 1 day, 0:02:55; Itertime: 2.52; LR: 3.618e-05;
+ overall_loss: 0.1525, cls_loss: 0.0483, cls_acc: 0.872,  cls_aux_loss: 0.0548, cls_aux_acc: 0.846, seg_loss: 0.3983, cam_loss: 0.6955, reg_loss: -0.5034 ...
+Iter: 26000; Elasped: 18:16:55; ETA: 23:54:25; Itertime: 2.52; LR: 3.599e-05;
+ overall_loss: 0.1577, cls_loss: 0.0512, cls_acc: 0.857,  cls_aux_loss: 0.0581, cls_aux_acc: 0.833, seg_loss: 0.3850, cam_loss: 0.6961, reg_loss: -0.4975 ...
+Iter: 26200; Elasped: 18:25:19; ETA: 23:45:56; Itertime: 2.52; LR: 3.580e-05;
+ overall_loss: 0.1520, cls_loss: 0.0488, cls_acc: 0.874,  cls_aux_loss: 0.0572, cls_aux_acc: 0.845, seg_loss: 0.3589, cam_loss: 0.6956, reg_loss: -0.4933 ...
+Iter: 26400; Elasped: 18:33:41; ETA: 23:37:24; Itertime: 2.51; LR: 3.561e-05;
+ overall_loss: 0.1541, cls_loss: 0.0497, cls_acc: 0.860,  cls_aux_loss: 0.0563, cls_aux_acc: 0.834, seg_loss: 0.3619, cam_loss: 0.6955, reg_loss: -0.4579 ...
+Iter: 26600; Elasped: 18:42:06; ETA: 23:28:57; Itertime: 2.52; LR: 3.542e-05;
+ overall_loss: 0.1561, cls_loss: 0.0506, cls_acc: 0.865,  cls_aux_loss: 0.0569, cls_aux_acc: 0.844, seg_loss: 0.3917, cam_loss: 0.6951, reg_loss: -0.5068 ...
+Iter: 26800; Elasped: 18:50:29; ETA: 23:20:26; Itertime: 2.52; LR: 3.523e-05;
+ overall_loss: 0.1560, cls_loss: 0.0521, cls_acc: 0.857,  cls_aux_loss: 0.0584, cls_aux_acc: 0.835, seg_loss: 0.3732, cam_loss: 0.6956, reg_loss: -0.5313 ...
+Iter: 27000; Elasped: 18:58:53; ETA: 23:11:58; Itertime: 2.52; LR: 3.503e-05;
+ overall_loss: 0.1540, cls_loss: 0.0504, cls_acc: 0.870,  cls_aux_loss: 0.0575, cls_aux_acc: 0.842, seg_loss: 0.3549, cam_loss: 0.6956, reg_loss: -0.4827 ...
+Iter: 27200; Elasped: 19:07:17; ETA: 23:03:29; Itertime: 2.52; LR: 3.484e-05;
+ overall_loss: 0.1515, cls_loss: 0.0497, cls_acc: 0.873,  cls_aux_loss: 0.0574, cls_aux_acc: 0.849, seg_loss: 0.3523, cam_loss: 0.6952, reg_loss: -0.5106 ...
+Iter: 27400; Elasped: 19:15:40; ETA: 22:54:59; Itertime: 2.52; LR: 3.465e-05;
+ overall_loss: 0.1584, cls_loss: 0.0493, cls_acc: 0.864,  cls_aux_loss: 0.0571, cls_aux_acc: 0.831, seg_loss: 0.4116, cam_loss: 0.6955, reg_loss: -0.4789 ...
+Iter: 27600; Elasped: 19:24:03; ETA: 22:46:29; Itertime: 2.51; LR: 3.446e-05;
+ overall_loss: 0.1535, cls_loss: 0.0500, cls_acc: 0.857,  cls_aux_loss: 0.0567, cls_aux_acc: 0.835, seg_loss: 0.3739, cam_loss: 0.6953, reg_loss: -0.5065 ...
+Iter: 27800; Elasped: 19:32:28; ETA: 22:38:02; Itertime: 2.53; LR: 3.427e-05;
+ overall_loss: 0.1533, cls_loss: 0.0502, cls_acc: 0.867,  cls_aux_loss: 0.0566, cls_aux_acc: 0.845, seg_loss: 0.3659, cam_loss: 0.6955, reg_loss: -0.4980 ...
+Iter: 28000; Elasped: 19:40:54; ETA: 22:29:36; Itertime: 2.53; LR: 3.408e-05;
+ overall_loss: 0.1530, cls_loss: 0.0497, cls_acc: 0.872,  cls_aux_loss: 0.0566, cls_aux_acc: 0.844, seg_loss: 0.3887, cam_loss: 0.6955, reg_loss: -0.5381 ...
+Iter: 28200; Elasped: 19:49:18; ETA: 22:21:07; Itertime: 2.52; LR: 3.389e-05;
+ overall_loss: 0.1539, cls_loss: 0.0504, cls_acc: 0.857,  cls_aux_loss: 0.0576, cls_aux_acc: 0.830, seg_loss: 0.3725, cam_loss: 0.6954, reg_loss: -0.5233 ...
+Iter: 28400; Elasped: 19:57:42; ETA: 22:12:39; Itertime: 2.52; LR: 3.369e-05;
+ overall_loss: 0.1438, cls_loss: 0.0455, cls_acc: 0.871,  cls_aux_loss: 0.0520, cls_aux_acc: 0.839, seg_loss: 0.3485, cam_loss: 0.6952, reg_loss: -0.4666 ...
+Iter: 28600; Elasped: 20:06:07; ETA: 22:04:11; Itertime: 2.53; LR: 3.350e-05;
+ overall_loss: 0.1553, cls_loss: 0.0507, cls_acc: 0.862,  cls_aux_loss: 0.0573, cls_aux_acc: 0.835, seg_loss: 0.3765, cam_loss: 0.6955, reg_loss: -0.5028 ...
+Iter: 28800; Elasped: 20:14:33; ETA: 21:55:45; Itertime: 2.53; LR: 3.331e-05;
+ overall_loss: 0.1541, cls_loss: 0.0494, cls_acc: 0.867,  cls_aux_loss: 0.0553, cls_aux_acc: 0.842, seg_loss: 0.3779, cam_loss: 0.6952, reg_loss: -0.4634 ...
+Iter: 29000; Elasped: 20:22:57; ETA: 21:47:17; Itertime: 2.52; LR: 3.312e-05;
+ overall_loss: 0.1547, cls_loss: 0.0509, cls_acc: 0.861,  cls_aux_loss: 0.0574, cls_aux_acc: 0.844, seg_loss: 0.3683, cam_loss: 0.6951, reg_loss: -0.5046 ...
+Iter: 29200; Elasped: 20:31:23; ETA: 21:38:51; Itertime: 2.53; LR: 3.292e-05;
+ overall_loss: 0.1483, cls_loss: 0.0489, cls_acc: 0.880,  cls_aux_loss: 0.0548, cls_aux_acc: 0.862, seg_loss: 0.3329, cam_loss: 0.6953, reg_loss: -0.4690 ...
+Iter: 29400; Elasped: 20:39:48; ETA: 21:30:24; Itertime: 2.52; LR: 3.273e-05;
+ overall_loss: 0.1445, cls_loss: 0.0483, cls_acc: 0.873,  cls_aux_loss: 0.0547, cls_aux_acc: 0.849, seg_loss: 0.3283, cam_loss: 0.6952, reg_loss: -0.5222 ...
+Iter: 29600; Elasped: 20:48:12; ETA: 21:21:56; Itertime: 2.52; LR: 3.254e-05;
+ overall_loss: 0.1466, cls_loss: 0.0462, cls_acc: 0.866,  cls_aux_loss: 0.0527, cls_aux_acc: 0.840, seg_loss: 0.3658, cam_loss: 0.6949, reg_loss: -0.4735 ...
+Iter: 29800; Elasped: 20:56:37; ETA: 21:13:29; Itertime: 2.52; LR: 3.235e-05;
+ overall_loss: 0.1459, cls_loss: 0.0483, cls_acc: 0.865,  cls_aux_loss: 0.0547, cls_aux_acc: 0.838, seg_loss: 0.3467, cam_loss: 0.6953, reg_loss: -0.5301 ...
+Iter: 30000; Elasped: 21:05:03; ETA: 21:05:03; Itertime: 2.53; LR: 3.215e-05;
+ overall_loss: 0.1537, cls_loss: 0.0498, cls_acc: 0.863,  cls_aux_loss: 0.0563, cls_aux_acc: 0.839, seg_loss: 0.3683, cam_loss: 0.6950, reg_loss: -0.4792 ...
+model validating...
+current_rank 0
+store saving with size: 2500 at rank: 0
+store loaded with size: 5000
+teacher: cls:0.9149690320923697, clsaux: 0.9038639722936112
++----------------+--------+---------+--------+--------+
+|     Class      |  CAM   | aux_CAM | Seg_ps | Seg_vd |
++================+========+=========+========+========+
+| _background_   | 82.300 | 80.800  | 83.540 | 83.750 |
++----------------+--------+---------+--------+--------+
+| person         | 53.550 | 65.700  | 69.660 | 69.880 |
++----------------+--------+---------+--------+--------+
+| bicycle        | 52.770 | 49.250  | 47.450 | 49.040 |
++----------------+--------+---------+--------+--------+
+| car            | 52.150 | 47.070  | 52.250 | 55.270 |
++----------------+--------+---------+--------+--------+
+| motorcycle     | 65.780 | 60.500  | 67.620 | 68.480 |
++----------------+--------+---------+--------+--------+
+| airplane       | 76.720 | 71.820  | 77.450 | 77.420 |
++----------------+--------+---------+--------+--------+
+| bus            | 72.770 | 60.700  | 75.030 | 76.130 |
++----------------+--------+---------+--------+--------+
+| train          | 58.480 | 48.520  | 57.740 | 57.960 |
++----------------+--------+---------+--------+--------+
+| truck          | 46.800 | 42.280  | 50.800 | 55.150 |
++----------------+--------+---------+--------+--------+
+| boat           | 50.560 | 42.880  | 56.710 | 57.390 |
++----------------+--------+---------+--------+--------+
+| traffic light  | 52.290 | 42.440  | 55.810 | 56.250 |
++----------------+--------+---------+--------+--------+
+| fire hydrant   | 78.650 | 55.950  | 74.050 | 76.700 |
++----------------+--------+---------+--------+--------+
+| stop sign      | 80.260 | 74.090  | 73.080 | 75.640 |
++----------------+--------+---------+--------+--------+
+| parking meter  | 71.610 | 62.270  | 65.270 | 70.060 |
++----------------+--------+---------+--------+--------+
+| bench          | 49.700 | 47.530  | 47.180 | 48.740 |
++----------------+--------+---------+--------+--------+
+| bird           | 63.160 | 65.340  | 62.660 | 64.240 |
++----------------+--------+---------+--------+--------+
+| cat            | 80.550 | 74.970  | 75.390 | 79.780 |
++----------------+--------+---------+--------+--------+
+| dog            | 71.060 | 67.200  | 69.170 | 72.710 |
++----------------+--------+---------+--------+--------+
+| horse          | 68.630 | 61.840  | 70.080 | 71.050 |
++----------------+--------+---------+--------+--------+
+| sheep          | 73.370 | 74.070  | 76.170 | 76.590 |
++----------------+--------+---------+--------+--------+
+| cow            | 68.670 | 56.940  | 67.870 | 69.880 |
++----------------+--------+---------+--------+--------+
+| elephant       | 75.860 | 77.670  | 80.930 | 81.950 |
++----------------+--------+---------+--------+--------+
+| bear           | 79.500 | 74.960  | 83.760 | 84.120 |
++----------------+--------+---------+--------+--------+
+| zebra          | 69.650 | 69.620  | 75.780 | 75.790 |
++----------------+--------+---------+--------+--------+
+| giraffe        | 61.040 | 68.160  | 66.860 | 66.920 |
++----------------+--------+---------+--------+--------+
+| backpack       | 33.910 | 34.740  | 20.100 | 27.620 |
++----------------+--------+---------+--------+--------+
+| umbrella       | 74.290 | 74.110  | 73.740 | 75.860 |
++----------------+--------+---------+--------+--------+
+| handbag        | 10.270 | 26.220  | 4.300  | 11.440 |
++----------------+--------+---------+--------+--------+
+| tie            | 38.950 | 30.270  | 40.370 | 40.580 |
++----------------+--------+---------+--------+--------+
+| suitcase       | 62.980 | 57.640  | 58.260 | 62.370 |
++----------------+--------+---------+--------+--------+
+| frisbee        | 57.310 | 56.240  | 56.530 | 56.920 |
++----------------+--------+---------+--------+--------+
+| skis           | 22.440 | 19.230  | 24.290 | 26.480 |
++----------------+--------+---------+--------+--------+
+| snowboard      | 34.810 | 18.600  | 40.580 | 43.020 |
++----------------+--------+---------+--------+--------+
+| sports ball    | 44.060 | 36.350  | 34.560 | 36.350 |
++----------------+--------+---------+--------+--------+
+| kite           | 47.750 | 46.430  | 46.150 | 46.830 |
++----------------+--------+---------+--------+--------+
+| baseball bat   | 4.630  | 1.760   | 2.660  | 2.800  |
++----------------+--------+---------+--------+--------+
+| baseball glove | 39.120 | 13.380  | 46.430 | 44.930 |
++----------------+--------+---------+--------+--------+
+| skateboard     | 20.430 | 23.030  | 12.700 | 13.130 |
++----------------+--------+---------+--------+--------+
+| surfboard      | 18.540 | 10.480  | 13.200 | 13.830 |
++----------------+--------+---------+--------+--------+
+| tennis racket  | 8.260  | 5.300   | 5.070  | 5.120  |
++----------------+--------+---------+--------+--------+
+| bottle         | 29.890 | 28.290  | 25.210 | 26.840 |
++----------------+--------+---------+--------+--------+
+| wine glass     | 37.040 | 39.620  | 34.390 | 36.020 |
++----------------+--------+---------+--------+--------+
+| cup            | 38.780 | 26.800  | 31.790 | 36.630 |
++----------------+--------+---------+--------+--------+
+| fork           | 23.580 | 16.640  | 15.260 | 21.210 |
++----------------+--------+---------+--------+--------+
+| knife          | 34.150 | 26.120  | 34.200 | 39.500 |
++----------------+--------+---------+--------+--------+
+| spoon          | 14.890 | 8.910   | 7.410  | 9.680  |
++----------------+--------+---------+--------+--------+
+| bowl           | 22.590 | 26.660  | 20.890 | 22.800 |
++----------------+--------+---------+--------+--------+
+| banana         | 75.370 | 72.780  | 72.210 | 73.870 |
++----------------+--------+---------+--------+--------+
+| apple          | 63.120 | 54.750  | 59.720 | 63.700 |
++----------------+--------+---------+--------+--------+
+| sandwich       | 56.110 | 45.770  | 48.300 | 53.760 |
++----------------+--------+---------+--------+--------+
+| orange         | 74.180 | 72.390  | 71.540 | 73.700 |
++----------------+--------+---------+--------+--------+
+| broccoli       | 52.980 | 52.890  | 50.510 | 52.520 |
++----------------+--------+---------+--------+--------+
+| carrot         | 63.960 | 62.100  | 54.430 | 62.730 |
++----------------+--------+---------+--------+--------+
+| hot dog        | 71.530 | 57.950  | 64.800 | 71.040 |
++----------------+--------+---------+--------+--------+
+| pizza          | 58.120 | 53.250  | 57.050 | 63.330 |
++----------------+--------+---------+--------+--------+
+| donut          | 76.530 | 70.330  | 67.970 | 77.250 |
++----------------+--------+---------+--------+--------+
+| cake           | 56.150 | 46.720  | 49.120 | 56.890 |
++----------------+--------+---------+--------+--------+
+| chair          | 29.400 | 34.910  | 28.230 | 32.080 |
++----------------+--------+---------+--------+--------+
+| couch          | 54.380 | 48.590  | 49.690 | 56.450 |
++----------------+--------+---------+--------+--------+
+| potted plant   | 26.550 | 28.360  | 19.110 | 21.190 |
++----------------+--------+---------+--------+--------+
+| bed            | 60.280 | 57.690  | 58.640 | 61.890 |
++----------------+--------+---------+--------+--------+
+| dining table   | 22.660 | 26.440  | 25.750 | 28.340 |
++----------------+--------+---------+--------+--------+
+| toilet         | 64.670 | 67.490  | 69.600 | 70.380 |
++----------------+--------+---------+--------+--------+
+| tv             | 45.970 | 43.200  | 48.320 | 49.630 |
++----------------+--------+---------+--------+--------+
+| laptop         | 63.210 | 59.440  | 62.440 | 63.110 |
++----------------+--------+---------+--------+--------+
+| mouse          | 26.550 | 12.260  | 19.100 | 20.620 |
++----------------+--------+---------+--------+--------+
+| remote         | 55.740 | 44.590  | 57.040 | 59.430 |
++----------------+--------+---------+--------+--------+
+| keyboard       | 38.430 | 41.090  | 41.390 | 41.980 |
++----------------+--------+---------+--------+--------+
+| cell phone     | 52.280 | 50.230  | 60.260 | 61.460 |
++----------------+--------+---------+--------+--------+
+| microwave      | 60.510 | 38.340  | 53.500 | 58.410 |
++----------------+--------+---------+--------+--------+
+| oven           | 38.450 | 31.800  | 35.930 | 40.220 |
++----------------+--------+---------+--------+--------+
+| toaster        | 0.410  | 7.850   | 0      | 0      |
++----------------+--------+---------+--------+--------+
+| sink           | 36.390 | 31.180  | 36.460 | 38.350 |
++----------------+--------+---------+--------+--------+
+| refrigerator   | 53.060 | 54.050  | 57.610 | 59.910 |
++----------------+--------+---------+--------+--------+
+| book           | 35.320 | 37.160  | 32.980 | 35.740 |
++----------------+--------+---------+--------+--------+
+| clock          | 61.650 | 51.370  | 58.210 | 59.110 |
++----------------+--------+---------+--------+--------+
+| vase           | 32.750 | 27.600  | 30.480 | 32.940 |
++----------------+--------+---------+--------+--------+
+| scissors       | 61.590 | 53.410  | 52.990 | 53.080 |
++----------------+--------+---------+--------+--------+
+| teddy bear     | 69.970 | 69.380  | 69.490 | 70.230 |
++----------------+--------+---------+--------+--------+
+| hair drier     | 38.460 | 19.340  | 0      | 0      |
++----------------+--------+---------+--------+--------+
+| toothbrush     | 34.880 | 31.270  | 35.160 | 35.930 |
++----------------+--------+---------+--------+--------+
+| mIoU           | 50.446 | 45.992  | 48.499 | 50.866 |
++----------------+--------+---------+--------+--------+
+Saving checkpoint to  /media/hossein-rahmani/Data1/xinyuyang/space/cocoseg/COCO_HS_03_lbz
+Iter: 30200; Elasped: 21:28:36; ETA: 21:11:31; Itertime: 7.07; LR: 3.196e-05;
+ overall_loss: 0.1451, cls_loss: 0.0482, cls_acc: 0.876,  cls_aux_loss: 0.0544, cls_aux_acc: 0.853, seg_loss: 0.3145, cam_loss: 0.6955, reg_loss: -0.4756 ...
+Iter: 30400; Elasped: 21:36:21; ETA: 21:02:14; Itertime: 2.32; LR: 3.177e-05;
+ overall_loss: 0.1536, cls_loss: 0.0504, cls_acc: 0.864,  cls_aux_loss: 0.0569, cls_aux_acc: 0.839, seg_loss: 0.3351, cam_loss: 0.6950, reg_loss: -0.4406 ...
+Iter: 30600; Elasped: 21:44:05; ETA: 20:52:56; Itertime: 2.32; LR: 3.157e-05;
+ overall_loss: 0.1468, cls_loss: 0.0483, cls_acc: 0.868,  cls_aux_loss: 0.0542, cls_aux_acc: 0.846, seg_loss: 0.3586, cam_loss: 0.6951, reg_loss: -0.5263 ...
+Iter: 30800; Elasped: 21:51:49; ETA: 20:43:40; Itertime: 2.32; LR: 3.138e-05;
+ overall_loss: 0.1453, cls_loss: 0.0485, cls_acc: 0.871,  cls_aux_loss: 0.0543, cls_aux_acc: 0.851, seg_loss: 0.3383, cam_loss: 0.6948, reg_loss: -0.5216 ...
+Iter: 31000; Elasped: 21:59:34; ETA: 20:34:26; Itertime: 2.32; LR: 3.119e-05;
+ overall_loss: 0.1391, cls_loss: 0.0466, cls_acc: 0.880,  cls_aux_loss: 0.0518, cls_aux_acc: 0.862, seg_loss: 0.2765, cam_loss: 0.6949, reg_loss: -0.4337 ...
+Iter: 31200; Elasped: 22:07:18; ETA: 20:25:12; Itertime: 2.32; LR: 3.099e-05;
+ overall_loss: 0.1460, cls_loss: 0.0472, cls_acc: 0.874,  cls_aux_loss: 0.0522, cls_aux_acc: 0.851, seg_loss: 0.3583, cam_loss: 0.6952, reg_loss: -0.4800 ...
+Iter: 31400; Elasped: 22:15:02; ETA: 20:15:59; Itertime: 2.32; LR: 3.080e-05;
+ overall_loss: 0.1398, cls_loss: 0.0461, cls_acc: 0.876,  cls_aux_loss: 0.0509, cls_aux_acc: 0.852, seg_loss: 0.3364, cam_loss: 0.6949, reg_loss: -0.5134 ...
+Iter: 31600; Elasped: 22:22:47; ETA: 20:06:48; Itertime: 2.32; LR: 3.061e-05;
+ overall_loss: 0.1370, cls_loss: 0.0461, cls_acc: 0.874,  cls_aux_loss: 0.0503, cls_aux_acc: 0.862, seg_loss: 0.3205, cam_loss: 0.6947, reg_loss: -0.5237 ...
+Iter: 31800; Elasped: 22:30:31; ETA: 19:57:37; Itertime: 2.32; LR: 3.041e-05;
+ overall_loss: 0.1550, cls_loss: 0.0512, cls_acc: 0.862,  cls_aux_loss: 0.0571, cls_aux_acc: 0.847, seg_loss: 0.3391, cam_loss: 0.6949, reg_loss: -0.4403 ...
+Iter: 32000; Elasped: 22:38:15; ETA: 19:48:28; Itertime: 2.32; LR: 3.022e-05;
+ overall_loss: 0.1437, cls_loss: 0.0468, cls_acc: 0.878,  cls_aux_loss: 0.0517, cls_aux_acc: 0.862, seg_loss: 0.3235, cam_loss: 0.6945, reg_loss: -0.4367 ...
+Iter: 32200; Elasped: 22:45:59; ETA: 19:39:19; Itertime: 2.32; LR: 3.002e-05;
+ overall_loss: 0.1413, cls_loss: 0.0473, cls_acc: 0.874,  cls_aux_loss: 0.0526, cls_aux_acc: 0.854, seg_loss: 0.3121, cam_loss: 0.6948, reg_loss: -0.4894 ...
+Iter: 32400; Elasped: 22:53:43; ETA: 19:30:12; Itertime: 2.32; LR: 2.983e-05;
+ overall_loss: 0.1419, cls_loss: 0.0461, cls_acc: 0.870,  cls_aux_loss: 0.0514, cls_aux_acc: 0.853, seg_loss: 0.3362, cam_loss: 0.6950, reg_loss: -0.4780 ...
+Iter: 32600; Elasped: 23:01:27; ETA: 19:21:05; Itertime: 2.32; LR: 2.963e-05;
+ overall_loss: 0.1422, cls_loss: 0.0476, cls_acc: 0.866,  cls_aux_loss: 0.0523, cls_aux_acc: 0.852, seg_loss: 0.3488, cam_loss: 0.6946, reg_loss: -0.5447 ...
+Iter: 32800; Elasped: 23:09:11; ETA: 19:12:00; Itertime: 2.32; LR: 2.944e-05;
+ overall_loss: 0.1471, cls_loss: 0.0495, cls_acc: 0.871,  cls_aux_loss: 0.0550, cls_aux_acc: 0.851, seg_loss: 0.3490, cam_loss: 0.6949, reg_loss: -0.5401 ...
+Iter: 33000; Elasped: 23:16:55; ETA: 19:02:55; Itertime: 2.32; LR: 2.925e-05;
+ overall_loss: 0.1501, cls_loss: 0.0498, cls_acc: 0.864,  cls_aux_loss: 0.0561, cls_aux_acc: 0.841, seg_loss: 0.3559, cam_loss: 0.6950, reg_loss: -0.5234 ...
+Iter: 33200; Elasped: 23:24:39; ETA: 18:53:52; Itertime: 2.32; LR: 2.905e-05;
+ overall_loss: 0.1386, cls_loss: 0.0442, cls_acc: 0.878,  cls_aux_loss: 0.0492, cls_aux_acc: 0.857, seg_loss: 0.3388, cam_loss: 0.6946, reg_loss: -0.4672 ...
+Iter: 33400; Elasped: 23:32:23; ETA: 18:44:49; Itertime: 2.32; LR: 2.886e-05;
+ overall_loss: 0.1438, cls_loss: 0.0451, cls_acc: 0.871,  cls_aux_loss: 0.0514, cls_aux_acc: 0.843, seg_loss: 0.3597, cam_loss: 0.6952, reg_loss: -0.4687 ...
+Iter: 33600; Elasped: 23:40:07; ETA: 18:35:48; Itertime: 2.32; LR: 2.866e-05;
+ overall_loss: 0.1438, cls_loss: 0.0476, cls_acc: 0.875,  cls_aux_loss: 0.0533, cls_aux_acc: 0.853, seg_loss: 0.3429, cam_loss: 0.6956, reg_loss: -0.5233 ...
+Iter: 33800; Elasped: 23:47:51; ETA: 18:26:47; Itertime: 2.32; LR: 2.846e-05;
+ overall_loss: 0.1434, cls_loss: 0.0481, cls_acc: 0.877,  cls_aux_loss: 0.0526, cls_aux_acc: 0.861, seg_loss: 0.3242, cam_loss: 0.6948, reg_loss: -0.4886 ...
+Iter: 34000; Elasped: 23:55:35; ETA: 18:17:47; Itertime: 2.32; LR: 2.827e-05;
+ overall_loss: 0.1409, cls_loss: 0.0454, cls_acc: 0.874,  cls_aux_loss: 0.0506, cls_aux_acc: 0.853, seg_loss: 0.3386, cam_loss: 0.6952, reg_loss: -0.4747 ...
+Iter: 34200; Elasped: 1 day, 0:03:20; ETA: 18:08:49; Itertime: 2.32; LR: 2.807e-05;
+ overall_loss: 0.1379, cls_loss: 0.0454, cls_acc: 0.881,  cls_aux_loss: 0.0508, cls_aux_acc: 0.863, seg_loss: 0.3196, cam_loss: 0.6946, reg_loss: -0.4993 ...
+Iter: 34400; Elasped: 1 day, 0:11:04; ETA: 17:59:51; Itertime: 2.32; LR: 2.788e-05;
+ overall_loss: 0.1443, cls_loss: 0.0471, cls_acc: 0.881,  cls_aux_loss: 0.0537, cls_aux_acc: 0.857, seg_loss: 0.3219, cam_loss: 0.6949, reg_loss: -0.4673 ...
+Iter: 34600; Elasped: 1 day, 0:18:48; ETA: 17:50:54; Itertime: 2.32; LR: 2.768e-05;
+ overall_loss: 0.1484, cls_loss: 0.0482, cls_acc: 0.871,  cls_aux_loss: 0.0541, cls_aux_acc: 0.853, seg_loss: 0.3600, cam_loss: 0.6944, reg_loss: -0.4943 ...
+Iter: 34800; Elasped: 1 day, 0:26:32; ETA: 17:41:58; Itertime: 2.32; LR: 2.748e-05;
+ overall_loss: 0.1398, cls_loss: 0.0455, cls_acc: 0.884,  cls_aux_loss: 0.0505, cls_aux_acc: 0.869, seg_loss: 0.3257, cam_loss: 0.6944, reg_loss: -0.4699 ...
+Iter: 35000; Elasped: 1 day, 0:34:16; ETA: 17:33:02; Itertime: 2.32; LR: 2.729e-05;
+ overall_loss: 0.1510, cls_loss: 0.0501, cls_acc: 0.862,  cls_aux_loss: 0.0555, cls_aux_acc: 0.849, seg_loss: 0.3587, cam_loss: 0.6947, reg_loss: -0.5054 ...
+Iter: 35200; Elasped: 1 day, 0:42:00; ETA: 17:24:08; Itertime: 2.32; LR: 2.709e-05;
+ overall_loss: 0.1377, cls_loss: 0.0457, cls_acc: 0.875,  cls_aux_loss: 0.0514, cls_aux_acc: 0.854, seg_loss: 0.2904, cam_loss: 0.6946, reg_loss: -0.4645 ...
+Iter: 35400; Elasped: 1 day, 0:49:43; ETA: 17:15:13; Itertime: 2.32; LR: 2.690e-05;
+ overall_loss: 0.1421, cls_loss: 0.0469, cls_acc: 0.881,  cls_aux_loss: 0.0516, cls_aux_acc: 0.860, seg_loss: 0.3330, cam_loss: 0.6945, reg_loss: -0.4896 ...
+Iter: 35600; Elasped: 1 day, 0:57:27; ETA: 17:06:20; Itertime: 2.32; LR: 2.670e-05;
+ overall_loss: 0.1388, cls_loss: 0.0453, cls_acc: 0.885,  cls_aux_loss: 0.0504, cls_aux_acc: 0.864, seg_loss: 0.3337, cam_loss: 0.6949, reg_loss: -0.5003 ...
+Iter: 35800; Elasped: 1 day, 1:05:11; ETA: 16:57:28; Itertime: 2.32; LR: 2.650e-05;
+ overall_loss: 0.1364, cls_loss: 0.0458, cls_acc: 0.879,  cls_aux_loss: 0.0508, cls_aux_acc: 0.865, seg_loss: 0.3146, cam_loss: 0.6948, reg_loss: -0.5278 ...
+Iter: 36000; Elasped: 1 day, 1:12:55; ETA: 16:48:36; Itertime: 2.32; LR: 2.630e-05;
+ overall_loss: 0.1403, cls_loss: 0.0462, cls_acc: 0.878,  cls_aux_loss: 0.0513, cls_aux_acc: 0.859, seg_loss: 0.3278, cam_loss: 0.6946, reg_loss: -0.4948 ...
+model validating...
+current_rank 0
+store saving with size: 2500 at rank: 0
+store loaded with size: 5000
+teacher: cls:0.9184660308725344, clsaux: 0.908692042846919
++----------------+--------+---------+--------+--------+
+|     Class      |  CAM   | aux_CAM | Seg_ps | Seg_vd |
++================+========+=========+========+========+
+| _background_   | 81.600 | 80.610  | 83.130 | 83.280 |
++----------------+--------+---------+--------+--------+
+| person         | 48.070 | 63.930  | 66.860 | 67.060 |
++----------------+--------+---------+--------+--------+
+| bicycle        | 51.540 | 47.160  | 47.700 | 49.150 |
++----------------+--------+---------+--------+--------+
+| car            | 51.190 | 44.810  | 50.030 | 52.060 |
++----------------+--------+---------+--------+--------+
+| motorcycle     | 65.720 | 59.630  | 67.820 | 68.400 |
++----------------+--------+---------+--------+--------+
+| airplane       | 75.640 | 67.570  | 77.850 | 77.890 |
++----------------+--------+---------+--------+--------+
+| bus            | 70.740 | 61.610  | 72.750 | 73.310 |
++----------------+--------+---------+--------+--------+
+| train          | 59.940 | 54.080  | 60.160 | 60.420 |
++----------------+--------+---------+--------+--------+
+| truck          | 44.160 | 33.370  | 46.850 | 49.580 |
++----------------+--------+---------+--------+--------+
+| boat           | 48.630 | 37.970  | 55.060 | 55.340 |
++----------------+--------+---------+--------+--------+
+| traffic light  | 54.080 | 40.800  | 54.920 | 55.500 |
++----------------+--------+---------+--------+--------+
+| fire hydrant   | 78.610 | 57.820  | 74.190 | 77.100 |
++----------------+--------+---------+--------+--------+
+| stop sign      | 80.360 | 59.750  | 74.040 | 76.440 |
++----------------+--------+---------+--------+--------+
+| parking meter  | 71.950 | 67.320  | 72.590 | 72.770 |
++----------------+--------+---------+--------+--------+
+| bench          | 49.780 | 47.200  | 46.610 | 47.920 |
++----------------+--------+---------+--------+--------+
+| bird           | 59.900 | 63.050  | 60.610 | 61.820 |
++----------------+--------+---------+--------+--------+
+| cat            | 78.790 | 72.950  | 75.420 | 79.180 |
++----------------+--------+---------+--------+--------+
+| dog            | 68.510 | 61.250  | 65.780 | 69.760 |
++----------------+--------+---------+--------+--------+
+| horse          | 67.830 | 66.220  | 70.860 | 70.950 |
++----------------+--------+---------+--------+--------+
+| sheep          | 70.460 | 75.190  | 76.070 | 76.380 |
++----------------+--------+---------+--------+--------+
+| cow            | 67.570 | 61.620  | 69.010 | 69.640 |
++----------------+--------+---------+--------+--------+
+| elephant       | 73.800 | 77.110  | 79.870 | 80.280 |
++----------------+--------+---------+--------+--------+
+| bear           | 76.790 | 76.050  | 79.770 | 81.390 |
++----------------+--------+---------+--------+--------+
+| zebra          | 67.350 | 71.090  | 74.370 | 74.370 |
++----------------+--------+---------+--------+--------+
+| giraffe        | 56.070 | 66.820  | 64.330 | 64.410 |
++----------------+--------+---------+--------+--------+
+| backpack       | 34.600 | 33.670  | 21.390 | 28.410 |
++----------------+--------+---------+--------+--------+
+| umbrella       | 74.250 | 74.540  | 73.720 | 75.710 |
++----------------+--------+---------+--------+--------+
+| handbag        | 9.270  | 22.610  | 4.450  | 7.980  |
++----------------+--------+---------+--------+--------+
+| tie            | 36.760 | 28.720  | 39.570 | 39.730 |
++----------------+--------+---------+--------+--------+
+| suitcase       | 61.700 | 56.730  | 58.880 | 61.440 |
++----------------+--------+---------+--------+--------+
+| frisbee        | 66.410 | 37.080  | 57.630 | 57.900 |
++----------------+--------+---------+--------+--------+
+| skis           | 24.090 | 9.860   | 25.800 | 28.250 |
++----------------+--------+---------+--------+--------+
+| snowboard      | 39.120 | 28.240  | 39.290 | 43.990 |
++----------------+--------+---------+--------+--------+
+| sports ball    | 44.140 | 34.890  | 36.830 | 37.200 |
++----------------+--------+---------+--------+--------+
+| kite           | 49.140 | 45.580  | 46.940 | 47.680 |
++----------------+--------+---------+--------+--------+
+| baseball bat   | 5.730  | 1.890   | 2.700  | 2.820  |
++----------------+--------+---------+--------+--------+
+| baseball glove | 34.240 | 9.460   | 40.940 | 39.420 |
++----------------+--------+---------+--------+--------+
+| skateboard     | 22.430 | 20.270  | 15.210 | 15.730 |
++----------------+--------+---------+--------+--------+
+| surfboard      | 21.390 | 12.800  | 15.230 | 15.650 |
++----------------+--------+---------+--------+--------+
+| tennis racket  | 8.480  | 5.610   | 4.660  | 4.670  |
++----------------+--------+---------+--------+--------+
+| bottle         | 29.300 | 25.980  | 25.810 | 27.510 |
++----------------+--------+---------+--------+--------+
+| wine glass     | 35.830 | 38.390  | 32.360 | 33.670 |
++----------------+--------+---------+--------+--------+
+| cup            | 38.230 | 29.130  | 33     | 38     |
++----------------+--------+---------+--------+--------+
+| fork           | 24.720 | 11.290  | 17.170 | 22.710 |
++----------------+--------+---------+--------+--------+
+| knife          | 34.570 | 23.270  | 31.880 | 40.560 |
++----------------+--------+---------+--------+--------+
+| spoon          | 17.050 | 6.190   | 7.950  | 10.080 |
++----------------+--------+---------+--------+--------+
+| bowl           | 20.720 | 25.690  | 20.980 | 22.850 |
++----------------+--------+---------+--------+--------+
+| banana         | 73.670 | 70.340  | 73.230 | 74.880 |
++----------------+--------+---------+--------+--------+
+| apple          | 62.560 | 63.800  | 58.010 | 63.650 |
++----------------+--------+---------+--------+--------+
+| sandwich       | 49.900 | 41.690  | 44.860 | 49.530 |
++----------------+--------+---------+--------+--------+
+| orange         | 74.280 | 72.820  | 72.110 | 74.230 |
++----------------+--------+---------+--------+--------+
+| broccoli       | 50.970 | 54.510  | 50.110 | 51.680 |
++----------------+--------+---------+--------+--------+
+| carrot         | 63.390 | 61.840  | 54.860 | 63.040 |
++----------------+--------+---------+--------+--------+
+| hot dog        | 70.850 | 47.750  | 64.360 | 69.550 |
++----------------+--------+---------+--------+--------+
+| pizza          | 56.340 | 56.220  | 55.790 | 61.430 |
++----------------+--------+---------+--------+--------+
+| donut          | 76.650 | 72.500  | 65.680 | 75.430 |
++----------------+--------+---------+--------+--------+
+| cake           | 56.290 | 47.510  | 49.790 | 57.100 |
++----------------+--------+---------+--------+--------+
+| chair          | 27.580 | 33.730  | 27.780 | 30.900 |
++----------------+--------+---------+--------+--------+
+| couch          | 52.460 | 52.220  | 50.130 | 55.070 |
++----------------+--------+---------+--------+--------+
+| potted plant   | 24.930 | 29.620  | 19.180 | 20.860 |
++----------------+--------+---------+--------+--------+
+| bed            | 55.240 | 52.110  | 56.150 | 58.450 |
++----------------+--------+---------+--------+--------+
+| dining table   | 19.670 | 27.630  | 23.690 | 25.650 |
++----------------+--------+---------+--------+--------+
+| toilet         | 62.840 | 68.310  | 68.860 | 70.700 |
++----------------+--------+---------+--------+--------+
+| tv             | 47.280 | 45.860  | 48.210 | 50.140 |
++----------------+--------+---------+--------+--------+
+| laptop         | 63.340 | 61.170  | 63.060 | 64.150 |
++----------------+--------+---------+--------+--------+
+| mouse          | 29.040 | 19.010  | 18.650 | 19.870 |
++----------------+--------+---------+--------+--------+
+| remote         | 57.770 | 42.390  | 61.470 | 65.530 |
++----------------+--------+---------+--------+--------+
+| keyboard       | 39.280 | 45.300  | 39.460 | 39.990 |
++----------------+--------+---------+--------+--------+
+| cell phone     | 56.690 | 53.920  | 61.890 | 63.970 |
++----------------+--------+---------+--------+--------+
+| microwave      | 59.690 | 47.810  | 55.130 | 58.900 |
++----------------+--------+---------+--------+--------+
+| oven           | 38.640 | 30.800  | 36.380 | 39.630 |
++----------------+--------+---------+--------+--------+
+| toaster        | 0.320  | 5.730   | 0      | 0      |
++----------------+--------+---------+--------+--------+
+| sink           | 39.190 | 33.130  | 38.610 | 40.090 |
++----------------+--------+---------+--------+--------+
+| refrigerator   | 51.650 | 53.990  | 54.090 | 56.030 |
++----------------+--------+---------+--------+--------+
+| book           | 36.040 | 37.770  | 35.200 | 38.960 |
++----------------+--------+---------+--------+--------+
+| clock          | 62.300 | 53.300  | 59.650 | 60.370 |
++----------------+--------+---------+--------+--------+
+| vase           | 36.110 | 31.760  | 33.200 | 34.610 |
++----------------+--------+---------+--------+--------+
+| scissors       | 61.830 | 54.500  | 55.650 | 56.210 |
++----------------+--------+---------+--------+--------+
+| teddy bear     | 68.670 | 69.350  | 68.600 | 69.230 |
++----------------+--------+---------+--------+--------+
+| hair drier     | 30.090 | 11.010  | 0      | 0.060  |
++----------------+--------+---------+--------+--------+
+| toothbrush     | 35.500 | 29.810  | 37.580 | 38.040 |
++----------------+--------+---------+--------+--------+
+| mIoU           | 49.905 | 45.384  | 48.401 | 50.547 |
++----------------+--------+---------+--------+--------+
+Iter: 36200; Elasped: 1 day, 1:36:30; ETA: 16:50:11; Itertime: 7.08; LR: 2.611e-05;
+ overall_loss: 0.1374, cls_loss: 0.0457, cls_acc: 0.884,  cls_aux_loss: 0.0505, cls_aux_acc: 0.866, seg_loss: 0.3070, cam_loss: 0.6945, reg_loss: -0.4843 ...
+Iter: 36400; Elasped: 1 day, 1:44:14; ETA: 16:41:12; Itertime: 2.32; LR: 2.591e-05;
+ overall_loss: 0.1529, cls_loss: 0.0513, cls_acc: 0.859,  cls_aux_loss: 0.0556, cls_aux_acc: 0.845, seg_loss: 0.3540, cam_loss: 0.6946, reg_loss: -0.4830 ...
+Iter: 36600; Elasped: 1 day, 1:51:58; ETA: 16:32:14; Itertime: 2.32; LR: 2.571e-05;
+ overall_loss: 0.1430, cls_loss: 0.0472, cls_acc: 0.875,  cls_aux_loss: 0.0534, cls_aux_acc: 0.851, seg_loss: 0.3370, cam_loss: 0.6943, reg_loss: -0.5184 ...
+Iter: 36800; Elasped: 1 day, 1:59:42; ETA: 16:23:17; Itertime: 2.32; LR: 2.551e-05;
+ overall_loss: 0.1326, cls_loss: 0.0444, cls_acc: 0.887,  cls_aux_loss: 0.0492, cls_aux_acc: 0.869, seg_loss: 0.3020, cam_loss: 0.6945, reg_loss: -0.5177 ...
+Iter: 37000; Elasped: 1 day, 2:07:27; ETA: 16:14:21; Itertime: 2.32; LR: 2.532e-05;
+ overall_loss: 0.1397, cls_loss: 0.0462, cls_acc: 0.883,  cls_aux_loss: 0.0518, cls_aux_acc: 0.862, seg_loss: 0.3026, cam_loss: 0.6944, reg_loss: -0.4655 ...
+Iter: 37200; Elasped: 1 day, 2:15:11; ETA: 16:05:26; Itertime: 2.32; LR: 2.512e-05;
+ overall_loss: 0.1422, cls_loss: 0.0462, cls_acc: 0.883,  cls_aux_loss: 0.0521, cls_aux_acc: 0.861, seg_loss: 0.3357, cam_loss: 0.6946, reg_loss: -0.4868 ...
+Iter: 37400; Elasped: 1 day, 2:22:55; ETA: 15:56:31; Itertime: 2.32; LR: 2.492e-05;
+ overall_loss: 0.1383, cls_loss: 0.0467, cls_acc: 0.881,  cls_aux_loss: 0.0518, cls_aux_acc: 0.867, seg_loss: 0.3051, cam_loss: 0.6945, reg_loss: -0.5080 ...
+Iter: 37600; Elasped: 1 day, 2:30:39; ETA: 15:47:37; Itertime: 2.32; LR: 2.472e-05;
+ overall_loss: 0.1387, cls_loss: 0.0468, cls_acc: 0.875,  cls_aux_loss: 0.0519, cls_aux_acc: 0.854, seg_loss: 0.2982, cam_loss: 0.6944, reg_loss: -0.4912 ...
+Iter: 37800; Elasped: 1 day, 2:38:23; ETA: 15:38:43; Itertime: 2.32; LR: 2.452e-05;
+ overall_loss: 0.1403, cls_loss: 0.0472, cls_acc: 0.882,  cls_aux_loss: 0.0528, cls_aux_acc: 0.864, seg_loss: 0.3283, cam_loss: 0.6944, reg_loss: -0.5439 ...
+Iter: 38000; Elasped: 1 day, 2:46:07; ETA: 15:29:51; Itertime: 2.32; LR: 2.432e-05;
+ overall_loss: 0.1446, cls_loss: 0.0472, cls_acc: 0.872,  cls_aux_loss: 0.0527, cls_aux_acc: 0.851, seg_loss: 0.3215, cam_loss: 0.6942, reg_loss: -0.4422 ...
+Iter: 38200; Elasped: 1 day, 2:53:51; ETA: 15:20:59; Itertime: 2.32; LR: 2.412e-05;
+ overall_loss: 0.1345, cls_loss: 0.0453, cls_acc: 0.877,  cls_aux_loss: 0.0490, cls_aux_acc: 0.862, seg_loss: 0.3134, cam_loss: 0.6943, reg_loss: -0.5196 ...
+Iter: 38400; Elasped: 1 day, 3:01:35; ETA: 15:12:08; Itertime: 2.32; LR: 2.392e-05;
+ overall_loss: 0.1380, cls_loss: 0.0463, cls_acc: 0.880,  cls_aux_loss: 0.0511, cls_aux_acc: 0.863, seg_loss: 0.2798, cam_loss: 0.6940, reg_loss: -0.4407 ...
+Iter: 38600; Elasped: 1 day, 3:09:20; ETA: 15:03:18; Itertime: 2.32; LR: 2.372e-05;
+ overall_loss: 0.1323, cls_loss: 0.0462, cls_acc: 0.878,  cls_aux_loss: 0.0506, cls_aux_acc: 0.862, seg_loss: 0.2692, cam_loss: 0.6942, reg_loss: -0.5218 ...
+Iter: 38800; Elasped: 1 day, 3:17:04; ETA: 14:54:28; Itertime: 2.32; LR: 2.353e-05;
+ overall_loss: 0.1265, cls_loss: 0.0421, cls_acc: 0.884,  cls_aux_loss: 0.0455, cls_aux_acc: 0.874, seg_loss: 0.2789, cam_loss: 0.6942, reg_loss: -0.4742 ...
+Iter: 39000; Elasped: 1 day, 3:24:48; ETA: 14:45:39; Itertime: 2.32; LR: 2.333e-05;
+ overall_loss: 0.1400, cls_loss: 0.0482, cls_acc: 0.870,  cls_aux_loss: 0.0534, cls_aux_acc: 0.851, seg_loss: 0.2838, cam_loss: 0.6945, reg_loss: -0.4957 ...
+Iter: 39200; Elasped: 1 day, 3:32:33; ETA: 14:36:51; Itertime: 2.32; LR: 2.313e-05;
+ overall_loss: 0.1442, cls_loss: 0.0480, cls_acc: 0.870,  cls_aux_loss: 0.0537, cls_aux_acc: 0.851, seg_loss: 0.3259, cam_loss: 0.6947, reg_loss: -0.4970 ...
+Iter: 39400; Elasped: 1 day, 3:40:18; ETA: 14:28:04; Itertime: 2.33; LR: 2.293e-05;
+ overall_loss: 0.1398, cls_loss: 0.0458, cls_acc: 0.882,  cls_aux_loss: 0.0509, cls_aux_acc: 0.860, seg_loss: 0.3278, cam_loss: 0.6945, reg_loss: -0.4864 ...
+Iter: 39600; Elasped: 1 day, 3:48:02; ETA: 14:19:17; Itertime: 2.32; LR: 2.272e-05;
+ overall_loss: 0.1347, cls_loss: 0.0453, cls_acc: 0.886,  cls_aux_loss: 0.0498, cls_aux_acc: 0.873, seg_loss: 0.3081, cam_loss: 0.6942, reg_loss: -0.5200 ...
+Iter: 39800; Elasped: 1 day, 3:55:46; ETA: 14:10:30; Itertime: 2.32; LR: 2.252e-05;
+ overall_loss: 0.1451, cls_loss: 0.0487, cls_acc: 0.868,  cls_aux_loss: 0.0544, cls_aux_acc: 0.845, seg_loss: 0.3168, cam_loss: 0.6943, reg_loss: -0.4881 ...
+Iter: 40000; Elasped: 1 day, 4:03:30; ETA: 14:01:45; Itertime: 2.32; LR: 2.232e-05;
+ overall_loss: 0.1311, cls_loss: 0.0442, cls_acc: 0.895,  cls_aux_loss: 0.0489, cls_aux_acc: 0.878, seg_loss: 0.2626, cam_loss: 0.6942, reg_loss: -0.4578 ...
+Iter: 40200; Elasped: 1 day, 4:11:15; ETA: 13:53:00; Itertime: 2.32; LR: 2.212e-05;
+ overall_loss: 0.1399, cls_loss: 0.0468, cls_acc: 0.874,  cls_aux_loss: 0.0511, cls_aux_acc: 0.859, seg_loss: 0.3101, cam_loss: 0.6944, reg_loss: -0.4746 ...
+Iter: 40400; Elasped: 1 day, 4:18:59; ETA: 13:44:15; Itertime: 2.32; LR: 2.192e-05;
+ overall_loss: 0.1390, cls_loss: 0.0465, cls_acc: 0.873,  cls_aux_loss: 0.0509, cls_aux_acc: 0.857, seg_loss: 0.3191, cam_loss: 0.6942, reg_loss: -0.4992 ...
+Iter: 40600; Elasped: 1 day, 4:26:43; ETA: 13:35:31; Itertime: 2.32; LR: 2.172e-05;
+ overall_loss: 0.1390, cls_loss: 0.0457, cls_acc: 0.877,  cls_aux_loss: 0.0507, cls_aux_acc: 0.861, seg_loss: 0.3141, cam_loss: 0.6943, reg_loss: -0.4691 ...
+Iter: 40800; Elasped: 1 day, 4:34:28; ETA: 13:26:48; Itertime: 2.32; LR: 2.152e-05;
+ overall_loss: 0.1412, cls_loss: 0.0485, cls_acc: 0.870,  cls_aux_loss: 0.0532, cls_aux_acc: 0.854, seg_loss: 0.2931, cam_loss: 0.6942, reg_loss: -0.4912 ...
+Iter: 41000; Elasped: 1 day, 4:42:13; ETA: 13:18:06; Itertime: 2.32; LR: 2.132e-05;
+ overall_loss: 0.1402, cls_loss: 0.0472, cls_acc: 0.884,  cls_aux_loss: 0.0517, cls_aux_acc: 0.868, seg_loss: 0.2956, cam_loss: 0.6943, reg_loss: -0.4610 ...
+Iter: 41200; Elasped: 1 day, 4:49:58; ETA: 13:09:24; Itertime: 2.32; LR: 2.111e-05;
+ overall_loss: 0.1248, cls_loss: 0.0411, cls_acc: 0.889,  cls_aux_loss: 0.0446, cls_aux_acc: 0.879, seg_loss: 0.2834, cam_loss: 0.6940, reg_loss: -0.4799 ...
+Iter: 41400; Elasped: 1 day, 4:57:42; ETA: 13:00:42; Itertime: 2.32; LR: 2.091e-05;
+ overall_loss: 0.1303, cls_loss: 0.0444, cls_acc: 0.890,  cls_aux_loss: 0.0477, cls_aux_acc: 0.877, seg_loss: 0.2629, cam_loss: 0.6938, reg_loss: -0.4557 ...
+Iter: 41600; Elasped: 1 day, 5:05:27; ETA: 12:52:01; Itertime: 2.32; LR: 2.071e-05;
+ overall_loss: 0.1213, cls_loss: 0.0419, cls_acc: 0.897,  cls_aux_loss: 0.0452, cls_aux_acc: 0.881, seg_loss: 0.2642, cam_loss: 0.6941, reg_loss: -0.5384 ...
+Iter: 41800; Elasped: 1 day, 5:13:12; ETA: 12:43:21; Itertime: 2.33; LR: 2.051e-05;
+ overall_loss: 0.1293, cls_loss: 0.0420, cls_acc: 0.888,  cls_aux_loss: 0.0456, cls_aux_acc: 0.879, seg_loss: 0.2982, cam_loss: 0.6942, reg_loss: -0.4567 ...
+Iter: 42000; Elasped: 1 day, 5:20:57; ETA: 12:34:41; Itertime: 2.33; LR: 2.030e-05;
+ overall_loss: 0.1326, cls_loss: 0.0450, cls_acc: 0.881,  cls_aux_loss: 0.0490, cls_aux_acc: 0.866, seg_loss: 0.2845, cam_loss: 0.6945, reg_loss: -0.4901 ...
+model validating...
+current_rank 0
+store saving with size: 2500 at rank: 0
+store loaded with size: 5000
+teacher: cls:0.9209442543948894, clsaux: 0.9093620307276755
++----------------+--------+---------+--------+--------+
+|     Class      |  CAM   | aux_CAM | Seg_ps | Seg_vd |
++================+========+=========+========+========+
+| _background_   | 80.860 | 80.540  | 82.570 | 82.690 |
++----------------+--------+---------+--------+--------+
+| person         | 43.080 | 62.470  | 63.360 | 63.580 |
++----------------+--------+---------+--------+--------+
+| bicycle        | 48.150 | 47.480  | 45.720 | 46.780 |
++----------------+--------+---------+--------+--------+
+| car            | 46.780 | 44.190  | 50.430 | 51.870 |
++----------------+--------+---------+--------+--------+
+| motorcycle     | 62.160 | 57.700  | 66.480 | 66.980 |
++----------------+--------+---------+--------+--------+
+| airplane       | 74.050 | 68.210  | 76.500 | 76.560 |
++----------------+--------+---------+--------+--------+
+| bus            | 68.610 | 62.090  | 70.900 | 71.830 |
++----------------+--------+---------+--------+--------+
+| train          | 58.900 | 50.130  | 58.430 | 58.990 |
++----------------+--------+---------+--------+--------+
+| truck          | 39.700 | 27.780  | 44.030 | 46.080 |
++----------------+--------+---------+--------+--------+
+| boat           | 43.420 | 35.760  | 47.490 | 47.690 |
++----------------+--------+---------+--------+--------+
+| traffic light  | 55.160 | 47.870  | 56.350 | 57.110 |
++----------------+--------+---------+--------+--------+
+| fire hydrant   | 77.480 | 62.480  | 73.610 | 76.740 |
++----------------+--------+---------+--------+--------+
+| stop sign      | 82.380 | 56.110  | 74.110 | 77.960 |
++----------------+--------+---------+--------+--------+
+| parking meter  | 71.420 | 65.320  | 71.690 | 71.850 |
++----------------+--------+---------+--------+--------+
+| bench          | 48.470 | 47.730  | 46.740 | 47.800 |
++----------------+--------+---------+--------+--------+
+| bird           | 59.220 | 60.990  | 59.430 | 60.790 |
++----------------+--------+---------+--------+--------+
+| cat            | 78.390 | 73.820  | 74.520 | 78.140 |
++----------------+--------+---------+--------+--------+
+| dog            | 66.970 | 62.140  | 64.960 | 69.570 |
++----------------+--------+---------+--------+--------+
+| horse          | 65.460 | 59.110  | 70.100 | 70.210 |
++----------------+--------+---------+--------+--------+
+| sheep          | 67.750 | 74.280  | 75.020 | 75.190 |
++----------------+--------+---------+--------+--------+
+| cow            | 62.890 | 48.540  | 67.220 | 67.690 |
++----------------+--------+---------+--------+--------+
+| elephant       | 68.660 | 74.290  | 79.370 | 79.610 |
++----------------+--------+---------+--------+--------+
+| bear           | 76.420 | 75.930  | 79.890 | 81.700 |
++----------------+--------+---------+--------+--------+
+| zebra          | 63.970 | 73.800  | 74.300 | 74.290 |
++----------------+--------+---------+--------+--------+
+| giraffe        | 51.560 | 56.330  | 58.940 | 58.980 |
++----------------+--------+---------+--------+--------+
+| backpack       | 33.930 | 34.580  | 23.260 | 29.570 |
++----------------+--------+---------+--------+--------+
+| umbrella       | 71.690 | 73.520  | 73.450 | 75.270 |
++----------------+--------+---------+--------+--------+
+| handbag        | 10.930 | 22.440  | 6.460  | 8.970  |
++----------------+--------+---------+--------+--------+
+| tie            | 41.810 | 36.490  | 41.630 | 42.030 |
++----------------+--------+---------+--------+--------+
+| suitcase       | 60.120 | 54.810  | 59.010 | 61.150 |
++----------------+--------+---------+--------+--------+
+| frisbee        | 68.070 | 52.780  | 67.210 | 67.570 |
++----------------+--------+---------+--------+--------+
+| skis           | 25.020 | 7.750   | 25.090 | 28.540 |
++----------------+--------+---------+--------+--------+
+| snowboard      | 42.010 | 36.830  | 38.110 | 46.610 |
++----------------+--------+---------+--------+--------+
+| sports ball    | 51.020 | 26.430  | 43.790 | 44     |
++----------------+--------+---------+--------+--------+
+| kite           | 49.380 | 41.730  | 48.560 | 48.860 |
++----------------+--------+---------+--------+--------+
+| baseball bat   | 8.100  | 2.540   | 3.750  | 3.830  |
++----------------+--------+---------+--------+--------+
+| baseball glove | 41.420 | 13.580  | 42.520 | 41.770 |
++----------------+--------+---------+--------+--------+
+| skateboard     | 26.440 | 21.400  | 18.600 | 19.300 |
++----------------+--------+---------+--------+--------+
+| surfboard      | 22.650 | 14.230  | 16.270 | 16.770 |
++----------------+--------+---------+--------+--------+
+| tennis racket  | 7.800  | 5.380   | 4.620  | 4.620  |
++----------------+--------+---------+--------+--------+
+| bottle         | 28.470 | 27.900  | 23.830 | 25.470 |
++----------------+--------+---------+--------+--------+
+| wine glass     | 37.020 | 38.310  | 35.280 | 36.030 |
++----------------+--------+---------+--------+--------+
+| cup            | 38.080 | 32.650  | 33.870 | 37.780 |
++----------------+--------+---------+--------+--------+
+| fork           | 25.320 | 19.910  | 18.200 | 24.300 |
++----------------+--------+---------+--------+--------+
+| knife          | 37.820 | 24.190  | 32.480 | 40.030 |
++----------------+--------+---------+--------+--------+
+| spoon          | 19.450 | 9.190   | 9.170  | 12.010 |
++----------------+--------+---------+--------+--------+
+| bowl           | 19.480 | 25.110  | 20.740 | 22.320 |
++----------------+--------+---------+--------+--------+
+| banana         | 71.800 | 70.750  | 71.400 | 73.150 |
++----------------+--------+---------+--------+--------+
+| apple          | 60.210 | 55.870  | 55.750 | 62.080 |
++----------------+--------+---------+--------+--------+
+| sandwich       | 49.070 | 44.120  | 44.760 | 49.640 |
++----------------+--------+---------+--------+--------+
+| orange         | 71.460 | 71      | 71.760 | 73.800 |
++----------------+--------+---------+--------+--------+
+| broccoli       | 48.970 | 48.890  | 49.450 | 50.400 |
++----------------+--------+---------+--------+--------+
+| carrot         | 62.740 | 62.330  | 55.600 | 62.820 |
++----------------+--------+---------+--------+--------+
+| hot dog        | 69.330 | 55.510  | 64.030 | 69.640 |
++----------------+--------+---------+--------+--------+
+| pizza          | 52.040 | 56.450  | 54.130 | 58.600 |
++----------------+--------+---------+--------+--------+
+| donut          | 76.750 | 71.390  | 66.940 | 76.050 |
++----------------+--------+---------+--------+--------+
+| cake           | 54.260 | 45.470  | 47.580 | 53.880 |
++----------------+--------+---------+--------+--------+
+| chair          | 26.380 | 35.120  | 27.160 | 30.010 |
++----------------+--------+---------+--------+--------+
+| couch          | 51.150 | 48.120  | 48.280 | 53.040 |
++----------------+--------+---------+--------+--------+
+| potted plant   | 25.430 | 28.430  | 20.190 | 21.850 |
++----------------+--------+---------+--------+--------+
+| bed            | 55.680 | 53.910  | 56.290 | 58     |
++----------------+--------+---------+--------+--------+
+| dining table   | 18.890 | 25.070  | 21.990 | 23.350 |
++----------------+--------+---------+--------+--------+
+| toilet         | 59.200 | 66.190  | 65.780 | 67.670 |
++----------------+--------+---------+--------+--------+
+| tv             | 49.420 | 44.510  | 51.140 | 53.240 |
++----------------+--------+---------+--------+--------+
+| laptop         | 63.030 | 59.110  | 63.510 | 64.090 |
++----------------+--------+---------+--------+--------+
+| mouse          | 36.850 | 16.570  | 33.850 | 35.560 |
++----------------+--------+---------+--------+--------+
+| remote         | 59.740 | 46.620  | 58.970 | 64.270 |
++----------------+--------+---------+--------+--------+
+| keyboard       | 42.290 | 48.400  | 48.340 | 48.470 |
++----------------+--------+---------+--------+--------+
+| cell phone     | 57.900 | 54.820  | 63.180 | 65.160 |
++----------------+--------+---------+--------+--------+
+| microwave      | 56.420 | 46.400  | 52.450 | 56.210 |
++----------------+--------+---------+--------+--------+
+| oven           | 37.680 | 31.520  | 38.220 | 42.540 |
++----------------+--------+---------+--------+--------+
+| toaster        | 0.230  | 4.560   | 0      | 0      |
++----------------+--------+---------+--------+--------+
+| sink           | 36.380 | 33.490  | 38.850 | 40.520 |
++----------------+--------+---------+--------+--------+
+| refrigerator   | 50.940 | 52.050  | 54.390 | 55.980 |
++----------------+--------+---------+--------+--------+
+| book           | 35.050 | 37.230  | 32.660 | 34.690 |
++----------------+--------+---------+--------+--------+
+| clock          | 61.120 | 48.370  | 61.190 | 61.840 |
++----------------+--------+---------+--------+--------+
+| vase           | 34.030 | 31.310  | 34.170 | 35.450 |
++----------------+--------+---------+--------+--------+
+| scissors       | 61.410 | 52.810  | 53.770 | 54.440 |
++----------------+--------+---------+--------+--------+
+| teddy bear     | 68.220 | 68.310  | 68.530 | 68.900 |
++----------------+--------+---------+--------+--------+
+| hair drier     | 34.730 | 8.140   | 0      | 1.960  |
++----------------+--------+---------+--------+--------+
+| toothbrush     | 35.780 | 28.270  | 37.220 | 37.590 |
++----------------+--------+---------+--------+--------+
+| mIoU           | 49.414 | 45.036  | 48.513 | 50.647 |
++----------------+--------+---------+--------+--------+
+Iter: 42200; Elasped: 1 day, 5:44:31; ETA: 12:32:42; Itertime: 7.07; LR: 2.010e-05;
+ overall_loss: 0.1343, cls_loss: 0.0454, cls_acc: 0.890,  cls_aux_loss: 0.0499, cls_aux_acc: 0.878, seg_loss: 0.2707, cam_loss: 0.6943, reg_loss: -0.4550 ...
+Iter: 42400; Elasped: 1 day, 5:52:15; ETA: 12:23:57; Itertime: 2.32; LR: 1.990e-05;
+ overall_loss: 0.1372, cls_loss: 0.0463, cls_acc: 0.886,  cls_aux_loss: 0.0495, cls_aux_acc: 0.873, seg_loss: 0.2979, cam_loss: 0.6942, reg_loss: -0.4642 ...
+Iter: 42600; Elasped: 1 day, 6:00:00; ETA: 12:15:12; Itertime: 2.32; LR: 1.969e-05;
+ overall_loss: 0.1323, cls_loss: 0.0449, cls_acc: 0.889,  cls_aux_loss: 0.0483, cls_aux_acc: 0.877, seg_loss: 0.3117, cam_loss: 0.6942, reg_loss: -0.5369 ...
+Iter: 42800; Elasped: 1 day, 6:07:44; ETA: 12:06:28; Itertime: 2.32; LR: 1.949e-05;
+ overall_loss: 0.1273, cls_loss: 0.0429, cls_acc: 0.892,  cls_aux_loss: 0.0465, cls_aux_acc: 0.886, seg_loss: 0.2758, cam_loss: 0.6945, reg_loss: -0.4888 ...
+Iter: 43000; Elasped: 1 day, 6:15:29; ETA: 11:57:44; Itertime: 2.32; LR: 1.929e-05;
+ overall_loss: 0.1306, cls_loss: 0.0446, cls_acc: 0.888,  cls_aux_loss: 0.0489, cls_aux_acc: 0.873, seg_loss: 0.2578, cam_loss: 0.6941, reg_loss: -0.4703 ...
+Iter: 43200; Elasped: 1 day, 6:23:13; ETA: 11:49:01; Itertime: 2.32; LR: 1.908e-05;
+ overall_loss: 0.1365, cls_loss: 0.0452, cls_acc: 0.881,  cls_aux_loss: 0.0486, cls_aux_acc: 0.870, seg_loss: 0.3147, cam_loss: 0.6938, reg_loss: -0.4681 ...
+Iter: 43400; Elasped: 1 day, 6:30:57; ETA: 11:40:19; Itertime: 2.32; LR: 1.888e-05;
+ overall_loss: 0.1336, cls_loss: 0.0441, cls_acc: 0.884,  cls_aux_loss: 0.0483, cls_aux_acc: 0.866, seg_loss: 0.2840, cam_loss: 0.6943, reg_loss: -0.4398 ...
+Iter: 43600; Elasped: 1 day, 6:38:41; ETA: 11:31:36; Itertime: 2.32; LR: 1.867e-05;
+ overall_loss: 0.1325, cls_loss: 0.0441, cls_acc: 0.886,  cls_aux_loss: 0.0485, cls_aux_acc: 0.871, seg_loss: 0.3026, cam_loss: 0.6941, reg_loss: -0.5020 ...
+Iter: 43800; Elasped: 1 day, 6:46:25; ETA: 11:22:55; Itertime: 2.32; LR: 1.847e-05;
+ overall_loss: 0.1192, cls_loss: 0.0396, cls_acc: 0.904,  cls_aux_loss: 0.0435, cls_aux_acc: 0.890, seg_loss: 0.2592, cam_loss: 0.6942, reg_loss: -0.4899 ...
+Iter: 44000; Elasped: 1 day, 6:54:09; ETA: 11:14:14; Itertime: 2.32; LR: 1.826e-05;
+ overall_loss: 0.1361, cls_loss: 0.0459, cls_acc: 0.895,  cls_aux_loss: 0.0498, cls_aux_acc: 0.879, seg_loss: 0.3022, cam_loss: 0.6942, reg_loss: -0.4893 ...
+Iter: 44200; Elasped: 1 day, 7:01:53; ETA: 11:05:33; Itertime: 2.32; LR: 1.806e-05;
+ overall_loss: 0.1336, cls_loss: 0.0458, cls_acc: 0.882,  cls_aux_loss: 0.0490, cls_aux_acc: 0.871, seg_loss: 0.2786, cam_loss: 0.6941, reg_loss: -0.4739 ...
+Iter: 44400; Elasped: 1 day, 7:09:37; ETA: 10:56:53; Itertime: 2.32; LR: 1.785e-05;
+ overall_loss: 0.1365, cls_loss: 0.0475, cls_acc: 0.881,  cls_aux_loss: 0.0506, cls_aux_acc: 0.866, seg_loss: 0.2996, cam_loss: 0.6941, reg_loss: -0.5240 ...
+Iter: 44600; Elasped: 1 day, 7:17:21; ETA: 10:48:13; Itertime: 2.32; LR: 1.764e-05;
+ overall_loss: 0.1232, cls_loss: 0.0418, cls_acc: 0.893,  cls_aux_loss: 0.0448, cls_aux_acc: 0.885, seg_loss: 0.2564, cam_loss: 0.6942, reg_loss: -0.4760 ...
+Iter: 44800; Elasped: 1 day, 7:25:05; ETA: 10:39:34; Itertime: 2.32; LR: 1.744e-05;
+ overall_loss: 0.1300, cls_loss: 0.0453, cls_acc: 0.888,  cls_aux_loss: 0.0490, cls_aux_acc: 0.881, seg_loss: 0.2530, cam_loss: 0.6939, reg_loss: -0.4854 ...
+Iter: 45000; Elasped: 1 day, 7:32:50; ETA: 10:30:56; Itertime: 2.32; LR: 1.723e-05;
+ overall_loss: 0.1286, cls_loss: 0.0423, cls_acc: 0.896,  cls_aux_loss: 0.0462, cls_aux_acc: 0.883, seg_loss: 0.2837, cam_loss: 0.6941, reg_loss: -0.4585 ...
+Iter: 45200; Elasped: 1 day, 7:40:34; ETA: 10:22:18; Itertime: 2.32; LR: 1.702e-05;
+ overall_loss: 0.1267, cls_loss: 0.0436, cls_acc: 0.879,  cls_aux_loss: 0.0474, cls_aux_acc: 0.863, seg_loss: 0.2613, cam_loss: 0.6942, reg_loss: -0.5042 ...
+Iter: 45400; Elasped: 1 day, 7:48:18; ETA: 10:13:40; Itertime: 2.32; LR: 1.682e-05;
+ overall_loss: 0.1324, cls_loss: 0.0440, cls_acc: 0.893,  cls_aux_loss: 0.0482, cls_aux_acc: 0.875, seg_loss: 0.3092, cam_loss: 0.6941, reg_loss: -0.5073 ...
+Iter: 45600; Elasped: 1 day, 7:56:02; ETA: 10:05:03; Itertime: 2.32; LR: 1.661e-05;
+ overall_loss: 0.1303, cls_loss: 0.0451, cls_acc: 0.883,  cls_aux_loss: 0.0483, cls_aux_acc: 0.874, seg_loss: 0.2635, cam_loss: 0.6939, reg_loss: -0.4831 ...
+Iter: 45800; Elasped: 1 day, 8:03:45; ETA: 9:56:26; Itertime: 2.32; LR: 1.640e-05;
+ overall_loss: 0.1283, cls_loss: 0.0434, cls_acc: 0.898,  cls_aux_loss: 0.0462, cls_aux_acc: 0.890, seg_loss: 0.2637, cam_loss: 0.6940, reg_loss: -0.4476 ...
+Iter: 46000; Elasped: 1 day, 8:11:29; ETA: 9:47:50; Itertime: 2.32; LR: 1.619e-05;
+ overall_loss: 0.1264, cls_loss: 0.0425, cls_acc: 0.890,  cls_aux_loss: 0.0460, cls_aux_acc: 0.879, seg_loss: 0.2706, cam_loss: 0.6941, reg_loss: -0.4779 ...
+Iter: 46200; Elasped: 1 day, 8:19:14; ETA: 9:39:15; Itertime: 2.32; LR: 1.599e-05;
+ overall_loss: 0.1299, cls_loss: 0.0444, cls_acc: 0.887,  cls_aux_loss: 0.0484, cls_aux_acc: 0.874, seg_loss: 0.2552, cam_loss: 0.6942, reg_loss: -0.4634 ...
+Iter: 46400; Elasped: 1 day, 8:26:57; ETA: 9:30:39; Itertime: 2.32; LR: 1.578e-05;
+ overall_loss: 0.1329, cls_loss: 0.0457, cls_acc: 0.880,  cls_aux_loss: 0.0489, cls_aux_acc: 0.868, seg_loss: 0.2749, cam_loss: 0.6939, reg_loss: -0.4761 ...
+Iter: 46600; Elasped: 1 day, 8:34:41; ETA: 9:22:04; Itertime: 2.32; LR: 1.557e-05;
+ overall_loss: 0.1282, cls_loss: 0.0433, cls_acc: 0.889,  cls_aux_loss: 0.0468, cls_aux_acc: 0.875, seg_loss: 0.2655, cam_loss: 0.6938, reg_loss: -0.4636 ...
+Iter: 46800; Elasped: 1 day, 8:42:26; ETA: 9:13:30; Itertime: 2.32; LR: 1.536e-05;
+ overall_loss: 0.1315, cls_loss: 0.0452, cls_acc: 0.881,  cls_aux_loss: 0.0496, cls_aux_acc: 0.866, seg_loss: 0.2720, cam_loss: 0.6940, reg_loss: -0.5051 ...
+Iter: 47000; Elasped: 1 day, 8:50:09; ETA: 9:04:56; Itertime: 2.32; LR: 1.515e-05;
+ overall_loss: 0.1268, cls_loss: 0.0438, cls_acc: 0.888,  cls_aux_loss: 0.0465, cls_aux_acc: 0.880, seg_loss: 0.2526, cam_loss: 0.6944, reg_loss: -0.4706 ...
+Iter: 47200; Elasped: 1 day, 8:57:53; ETA: 8:56:22; Itertime: 2.32; LR: 1.494e-05;
+ overall_loss: 0.1253, cls_loss: 0.0423, cls_acc: 0.893,  cls_aux_loss: 0.0454, cls_aux_acc: 0.883, seg_loss: 0.2575, cam_loss: 0.6938, reg_loss: -0.4577 ...
+Iter: 47400; Elasped: 1 day, 9:05:38; ETA: 8:47:49; Itertime: 2.32; LR: 1.473e-05;
+ overall_loss: 0.1274, cls_loss: 0.0419, cls_acc: 0.897,  cls_aux_loss: 0.0454, cls_aux_acc: 0.883, seg_loss: 0.2806, cam_loss: 0.6940, reg_loss: -0.4524 ...
+Iter: 47600; Elasped: 1 day, 9:13:22; ETA: 8:39:16; Itertime: 2.32; LR: 1.452e-05;
+ overall_loss: 0.1397, cls_loss: 0.0465, cls_acc: 0.875,  cls_aux_loss: 0.0498, cls_aux_acc: 0.864, seg_loss: 0.3094, cam_loss: 0.6942, reg_loss: -0.4440 ...
+Iter: 47800; Elasped: 1 day, 9:21:05; ETA: 8:30:44; Itertime: 2.32; LR: 1.431e-05;
+ overall_loss: 0.1264, cls_loss: 0.0416, cls_acc: 0.891,  cls_aux_loss: 0.0451, cls_aux_acc: 0.883, seg_loss: 0.2760, cam_loss: 0.6939, reg_loss: -0.4536 ...
+Iter: 48000; Elasped: 1 day, 9:28:49; ETA: 8:22:12; Itertime: 2.32; LR: 1.410e-05;
+ overall_loss: 0.1261, cls_loss: 0.0426, cls_acc: 0.889,  cls_aux_loss: 0.0450, cls_aux_acc: 0.886, seg_loss: 0.2688, cam_loss: 0.6941, reg_loss: -0.4631 ...
+model validating...
+current_rank 0
+store saving with size: 2500 at rank: 0
+store loaded with size: 5000
+teacher: cls:0.9226907803406887, clsaux: 0.9112315140725981
++----------------+--------+---------+--------+--------+---------+
+|     Class      |  CAM   | aux_CAM | Seg_ps | Seg_vd | Seg_crf |
++================+========+=========+========+========+=========+
+| _background_   | 80.280 | 79.790  | 81.880 | 81.960 | 81.980  |
++----------------+--------+---------+--------+--------+---------+
+| person         | 39.780 | 58.840  | 59.320 | 59.540 | 59.530  |
++----------------+--------+---------+--------+--------+---------+
+| bicycle        | 48.280 | 44.370  | 44.240 | 45.230 | 44.380  |
++----------------+--------+---------+--------+--------+---------+
+| car            | 43.850 | 42.750  | 48.150 | 49.270 | 48.930  |
++----------------+--------+---------+--------+--------+---------+
+| motorcycle     | 61.020 | 59.510  | 65.860 | 66.210 | 66.170  |
++----------------+--------+---------+--------+--------+---------+
+| airplane       | 72.300 | 73.060  | 76.400 | 76.430 | 76.690  |
++----------------+--------+---------+--------+--------+---------+
+| bus            | 65.120 | 57.040  | 68.190 | 68.600 | 68.590  |
++----------------+--------+---------+--------+--------+---------+
+| train          | 57.620 | 51.240  | 59.760 | 59.990 | 60.070  |
++----------------+--------+---------+--------+--------+---------+
+| truck          | 36.930 | 29.960  | 41.700 | 43.440 | 43.210  |
++----------------+--------+---------+--------+--------+---------+
+| boat           | 40.550 | 36.030  | 45.740 | 45.820 | 45.460  |
++----------------+--------+---------+--------+--------+---------+
+| traffic light  | 55.130 | 46.470  | 57.130 | 57.880 | 58.580  |
++----------------+--------+---------+--------+--------+---------+
+| fire hydrant   | 75.070 | 62.410  | 73.610 | 75.150 | 75.330  |
++----------------+--------+---------+--------+--------+---------+
+| stop sign      | 83.040 | 56.130  | 77.420 | 80.100 | 80.620  |
++----------------+--------+---------+--------+--------+---------+
+| parking meter  | 72.410 | 62.750  | 71.070 | 71.380 | 71.240  |
++----------------+--------+---------+--------+--------+---------+
+| bench          | 46.210 | 48.040  | 44.380 | 45.790 | 45.570  |
++----------------+--------+---------+--------+--------+---------+
+| bird           | 59.330 | 66.050  | 60.890 | 62.600 | 62.590  |
++----------------+--------+---------+--------+--------+---------+
+| cat            | 77.920 | 74.740  | 75.360 | 79.030 | 79.190  |
++----------------+--------+---------+--------+--------+---------+
+| dog            | 64.310 | 64.830  | 65.680 | 69.740 | 69.970  |
++----------------+--------+---------+--------+--------+---------+
+| horse          | 64.370 | 65.510  | 68.900 | 69.200 | 69.280  |
++----------------+--------+---------+--------+--------+---------+
+| sheep          | 66.310 | 75.120  | 74.380 | 74.740 | 74.890  |
++----------------+--------+---------+--------+--------+---------+
+| cow            | 62.680 | 60.840  | 66.400 | 66.830 | 66.840  |
++----------------+--------+---------+--------+--------+---------+
+| elephant       | 66.410 | 74.970  | 78.220 | 78.520 | 78.740  |
++----------------+--------+---------+--------+--------+---------+
+| bear           | 73.280 | 77.050  | 79.410 | 80.400 | 80.530  |
++----------------+--------+---------+--------+--------+---------+
+| zebra          | 61.350 | 70.080  | 72.260 | 72.260 | 72.330  |
++----------------+--------+---------+--------+--------+---------+
+| giraffe        | 46.730 | 59.630  | 56.480 | 56.530 | 56.380  |
++----------------+--------+---------+--------+--------+---------+
+| backpack       | 33.070 | 32.410  | 23     | 28.910 | 28.890  |
++----------------+--------+---------+--------+--------+---------+
+| umbrella       | 73.510 | 76.750  | 75.900 | 77.750 | 78.180  |
++----------------+--------+---------+--------+--------+---------+
+| handbag        | 13.200 | 23.670  | 8.320  | 11.050 | 10.790  |
++----------------+--------+---------+--------+--------+---------+
+| tie            | 41.380 | 34.400  | 39.660 | 39.970 | 39.650  |
++----------------+--------+---------+--------+--------+---------+
+| suitcase       | 60.030 | 57.110  | 59.080 | 61.150 | 61.240  |
++----------------+--------+---------+--------+--------+---------+
+| frisbee        | 71.490 | 53.280  | 66.670 | 67.620 | 68.320  |
++----------------+--------+---------+--------+--------+---------+
+| skis           | 22.610 | 6.070   | 24.610 | 27.870 | 28.790  |
++----------------+--------+---------+--------+--------+---------+
+| snowboard      | 44.150 | 18.490  | 36.690 | 42.900 | 43.290  |
++----------------+--------+---------+--------+--------+---------+
+| sports ball    | 49.660 | 22.520  | 40.990 | 41.650 | 43.210  |
++----------------+--------+---------+--------+--------+---------+
+| kite           | 49.150 | 44.030  | 48.760 | 49.240 | 49.740  |
++----------------+--------+---------+--------+--------+---------+
+| baseball bat   | 7.480  | 2.300   | 3.830  | 3.910  | 4.030   |
++----------------+--------+---------+--------+--------+---------+
+| baseball glove | 42.180 | 12.870  | 43.530 | 43.330 | 44.710  |
++----------------+--------+---------+--------+--------+---------+
+| skateboard     | 24.290 | 19.990  | 16.750 | 16.940 | 16.750  |
++----------------+--------+---------+--------+--------+---------+
+| surfboard      | 28.230 | 15.560  | 18.690 | 19.180 | 19.360  |
++----------------+--------+---------+--------+--------+---------+
+| tennis racket  | 5.950  | 4.430   | 3.560  | 3.570  | 3.510   |
++----------------+--------+---------+--------+--------+---------+
+| bottle         | 28.590 | 28.610  | 24.620 | 26.140 | 25.440  |
++----------------+--------+---------+--------+--------+---------+
+| wine glass     | 37.510 | 39.950  | 34.990 | 35.890 | 35.820  |
++----------------+--------+---------+--------+--------+---------+
+| cup            | 36.370 | 34.590  | 33.360 | 37.060 | 37.020  |
++----------------+--------+---------+--------+--------+---------+
+| fork           | 23.840 | 13.690  | 18.980 | 25.050 | 25.360  |
++----------------+--------+---------+--------+--------+---------+
+| knife          | 40.530 | 19.690  | 33.220 | 41.990 | 41.880  |
++----------------+--------+---------+--------+--------+---------+
+| spoon          | 19.960 | 7.130   | 11.210 | 14.100 | 14.190  |
++----------------+--------+---------+--------+--------+---------+
+| bowl           | 19.030 | 24.780  | 19.540 | 20.830 | 20.500  |
++----------------+--------+---------+--------+--------+---------+
+| banana         | 70.170 | 70.340  | 70.050 | 71.840 | 72.200  |
++----------------+--------+---------+--------+--------+---------+
+| apple          | 59.240 | 53.500  | 56.640 | 61.960 | 62.170  |
++----------------+--------+---------+--------+--------+---------+
+| sandwich       | 47.440 | 43.850  | 42.590 | 45.500 | 45.260  |
++----------------+--------+---------+--------+--------+---------+
+| orange         | 71.840 | 70.140  | 73.500 | 75.330 | 75.690  |
++----------------+--------+---------+--------+--------+---------+
+| broccoli       | 48.100 | 53.500  | 48.820 | 49.960 | 50.070  |
++----------------+--------+---------+--------+--------+---------+
+| carrot         | 60.390 | 62      | 55.090 | 62.280 | 62.670  |
++----------------+--------+---------+--------+--------+---------+
+| hot dog        | 67.900 | 55.810  | 63.990 | 69.620 | 70.080  |
++----------------+--------+---------+--------+--------+---------+
+| pizza          | 48.910 | 47.260  | 49.670 | 53.410 | 53.460  |
++----------------+--------+---------+--------+--------+---------+
+| donut          | 75.560 | 71.340  | 67.650 | 74.560 | 74.980  |
++----------------+--------+---------+--------+--------+---------+
+| cake           | 53.070 | 47.360  | 47.130 | 54.240 | 54.480  |
++----------------+--------+---------+--------+--------+---------+
+| chair          | 26.990 | 35.440  | 28     | 30.310 | 29.860  |
++----------------+--------+---------+--------+--------+---------+
+| couch          | 49.160 | 42.510  | 46.440 | 50.180 | 50.290  |
++----------------+--------+---------+--------+--------+---------+
+| potted plant   | 24.670 | 27.100  | 19.390 | 20.810 | 20.350  |
++----------------+--------+---------+--------+--------+---------+
+| bed            | 56.440 | 54.470  | 56.980 | 59.270 | 59.380  |
++----------------+--------+---------+--------+--------+---------+
+| dining table   | 17.470 | 23.600  | 20.130 | 21.240 | 21.130  |
++----------------+--------+---------+--------+--------+---------+
+| toilet         | 53.230 | 62.830  | 61.520 | 61.850 | 61.620  |
++----------------+--------+---------+--------+--------+---------+
+| tv             | 47.680 | 44.520  | 50.860 | 52.590 | 52.530  |
++----------------+--------+---------+--------+--------+---------+
+| laptop         | 63.270 | 62.460  | 65.050 | 65.740 | 65.800  |
++----------------+--------+---------+--------+--------+---------+
+| mouse          | 41.340 | 15.970  | 39.770 | 42.140 | 42.970  |
++----------------+--------+---------+--------+--------+---------+
+| remote         | 60.830 | 54      | 58.870 | 65.770 | 66.050  |
++----------------+--------+---------+--------+--------+---------+
+| keyboard       | 43.250 | 49.650  | 47.320 | 47.500 | 47.100  |
++----------------+--------+---------+--------+--------+---------+
+| cell phone     | 52.640 | 52.580  | 59.970 | 61.880 | 61.980  |
++----------------+--------+---------+--------+--------+---------+
+| microwave      | 56.300 | 40.280  | 49.710 | 57.290 | 57.260  |
++----------------+--------+---------+--------+--------+---------+
+| oven           | 35.520 | 32.230  | 34.870 | 39.130 | 39.010  |
++----------------+--------+---------+--------+--------+---------+
+| toaster        | 0.140  | 3.860   | 0      | 0      | 0       |
++----------------+--------+---------+--------+--------+---------+
+| sink           | 35.350 | 35.140  | 38.030 | 39.150 | 39.360  |
++----------------+--------+---------+--------+--------+---------+
+| refrigerator   | 49.550 | 53.370  | 54.760 | 55.970 | 56.130  |
++----------------+--------+---------+--------+--------+---------+
+| book           | 34.470 | 38.160  | 32.890 | 35.240 | 34.870  |
++----------------+--------+---------+--------+--------+---------+
+| clock          | 59.680 | 54.560  | 59.130 | 60.080 | 59.820  |
++----------------+--------+---------+--------+--------+---------+
+| vase           | 33.950 | 32.450  | 33.380 | 34.410 | 34.580  |
++----------------+--------+---------+--------+--------+---------+
+| scissors       | 62.340 | 55.800  | 53.530 | 54.130 | 53.750  |
++----------------+--------+---------+--------+--------+---------+
+| teddy bear     | 67.610 | 67.790  | 68.960 | 69.650 | 69.880  |
++----------------+--------+---------+--------+--------+---------+
+| hair drier     | 39.120 | 16.240  | 0      | 3.090  | 3.070   |
++----------------+--------+---------+--------+--------+---------+
+| toothbrush     | 35.010 | 31.430  | 37.250 | 37.640 | 37.740  |
++----------------+--------+---------+--------+--------+---------+
+| mIoU           | 48.656 | 45.075  | 48.034 | 50.080 | 50.165  |
++----------------+--------+---------+--------+--------+---------+
+Iter: 48200; Elasped: 1 day, 10:32:54; ETA: 8:27:28; Itertime: 19.23; LR: 1.388e-05;
+ overall_loss: 0.1359, cls_loss: 0.0458, cls_acc: 0.885,  cls_aux_loss: 0.0498, cls_aux_acc: 0.873, seg_loss: 0.2622, cam_loss: 0.6939, reg_loss: -0.4121 ...
+Iter: 48400; Elasped: 1 day, 10:40:38; ETA: 8:18:39; Itertime: 2.32; LR: 1.367e-05;
+ overall_loss: 0.1294, cls_loss: 0.0440, cls_acc: 0.889,  cls_aux_loss: 0.0477, cls_aux_acc: 0.877, seg_loss: 0.2639, cam_loss: 0.6942, reg_loss: -0.4668 ...
+Iter: 48600; Elasped: 1 day, 10:48:22; ETA: 8:09:51; Itertime: 2.32; LR: 1.346e-05;
+ overall_loss: 0.1313, cls_loss: 0.0442, cls_acc: 0.887,  cls_aux_loss: 0.0484, cls_aux_acc: 0.865, seg_loss: 0.2624, cam_loss: 0.6938, reg_loss: -0.4456 ...
+Iter: 48800; Elasped: 1 day, 10:56:06; ETA: 8:01:04; Itertime: 2.32; LR: 1.325e-05;
+ overall_loss: 0.1263, cls_loss: 0.0420, cls_acc: 0.899,  cls_aux_loss: 0.0452, cls_aux_acc: 0.883, seg_loss: 0.2734, cam_loss: 0.6938, reg_loss: -0.4582 ...
+Iter: 49000; Elasped: 1 day, 11:03:50; ETA: 7:52:17; Itertime: 2.32; LR: 1.303e-05;
+ overall_loss: 0.1339, cls_loss: 0.0457, cls_acc: 0.892,  cls_aux_loss: 0.0494, cls_aux_acc: 0.877, seg_loss: 0.2923, cam_loss: 0.6941, reg_loss: -0.5012 ...
+Iter: 49200; Elasped: 1 day, 11:11:35; ETA: 7:43:31; Itertime: 2.32; LR: 1.282e-05;
+ overall_loss: 0.1257, cls_loss: 0.0416, cls_acc: 0.901,  cls_aux_loss: 0.0444, cls_aux_acc: 0.885, seg_loss: 0.2981, cam_loss: 0.6944, reg_loss: -0.4956 ...
+Iter: 49400; Elasped: 1 day, 11:19:18; ETA: 7:34:44; Itertime: 2.32; LR: 1.261e-05;
+ overall_loss: 0.1267, cls_loss: 0.0437, cls_acc: 0.878,  cls_aux_loss: 0.0466, cls_aux_acc: 0.868, seg_loss: 0.2823, cam_loss: 0.6940, reg_loss: -0.5298 ...
+Iter: 49600; Elasped: 1 day, 11:27:02; ETA: 7:25:59; Itertime: 2.32; LR: 1.239e-05;
+ overall_loss: 0.1309, cls_loss: 0.0454, cls_acc: 0.881,  cls_aux_loss: 0.0481, cls_aux_acc: 0.869, seg_loss: 0.2895, cam_loss: 0.6942, reg_loss: -0.5253 ...
+Iter: 49800; Elasped: 1 day, 11:34:47; ETA: 7:17:14; Itertime: 2.32; LR: 1.218e-05;
+ overall_loss: 0.1275, cls_loss: 0.0447, cls_acc: 0.890,  cls_aux_loss: 0.0482, cls_aux_acc: 0.876, seg_loss: 0.2583, cam_loss: 0.6939, reg_loss: -0.5169 ...
+Iter: 50000; Elasped: 1 day, 11:42:31; ETA: 7:08:30; Itertime: 2.32; LR: 1.196e-05;
+ overall_loss: 0.1274, cls_loss: 0.0431, cls_acc: 0.894,  cls_aux_loss: 0.0456, cls_aux_acc: 0.880, seg_loss: 0.2716, cam_loss: 0.6940, reg_loss: -0.4628 ...
+Iter: 50200; Elasped: 1 day, 11:50:15; ETA: 6:59:46; Itertime: 2.32; LR: 1.175e-05;
+ overall_loss: 0.1242, cls_loss: 0.0432, cls_acc: 0.891,  cls_aux_loss: 0.0465, cls_aux_acc: 0.882, seg_loss: 0.2349, cam_loss: 0.6938, reg_loss: -0.4725 ...
+Iter: 50400; Elasped: 1 day, 11:57:59; ETA: 6:51:02; Itertime: 2.32; LR: 1.153e-05;
+ overall_loss: 0.1307, cls_loss: 0.0442, cls_acc: 0.885,  cls_aux_loss: 0.0480, cls_aux_acc: 0.872, seg_loss: 0.2642, cam_loss: 0.6940, reg_loss: -0.4523 ...
+Iter: 50600; Elasped: 1 day, 12:05:43; ETA: 6:42:19; Itertime: 2.32; LR: 1.132e-05;
+ overall_loss: 0.1287, cls_loss: 0.0434, cls_acc: 0.892,  cls_aux_loss: 0.0468, cls_aux_acc: 0.883, seg_loss: 0.2673, cam_loss: 0.6941, reg_loss: -0.4601 ...
+Iter: 50800; Elasped: 1 day, 12:13:27; ETA: 6:33:37; Itertime: 2.32; LR: 1.110e-05;
+ overall_loss: 0.1182, cls_loss: 0.0409, cls_acc: 0.898,  cls_aux_loss: 0.0440, cls_aux_acc: 0.888, seg_loss: 0.2584, cam_loss: 0.6939, reg_loss: -0.5462 ...
+Iter: 51000; Elasped: 1 day, 12:21:13; ETA: 6:24:55; Itertime: 2.33; LR: 1.088e-05;
+ overall_loss: 0.1210, cls_loss: 0.0418, cls_acc: 0.891,  cls_aux_loss: 0.0445, cls_aux_acc: 0.882, seg_loss: 0.2437, cam_loss: 0.6938, reg_loss: -0.4878 ...
+Iter: 51200; Elasped: 1 day, 12:28:57; ETA: 6:16:13; Itertime: 2.32; LR: 1.066e-05;
+ overall_loss: 0.1270, cls_loss: 0.0429, cls_acc: 0.902,  cls_aux_loss: 0.0461, cls_aux_acc: 0.887, seg_loss: 0.2677, cam_loss: 0.6939, reg_loss: -0.4683 ...
+Iter: 51400; Elasped: 1 day, 12:36:41; ETA: 6:07:32; Itertime: 2.32; LR: 1.045e-05;
+ overall_loss: 0.1245, cls_loss: 0.0414, cls_acc: 0.893,  cls_aux_loss: 0.0442, cls_aux_acc: 0.887, seg_loss: 0.2756, cam_loss: 0.6940, reg_loss: -0.4663 ...
+Iter: 51600; Elasped: 1 day, 12:44:26; ETA: 5:58:51; Itertime: 2.33; LR: 1.023e-05;
+ overall_loss: 0.1251, cls_loss: 0.0429, cls_acc: 0.893,  cls_aux_loss: 0.0443, cls_aux_acc: 0.887, seg_loss: 0.2558, cam_loss: 0.6941, reg_loss: -0.4466 ...
+Iter: 51800; Elasped: 1 day, 12:52:11; ETA: 5:50:11; Itertime: 2.32; LR: 1.001e-05;
+ overall_loss: 0.1285, cls_loss: 0.0429, cls_acc: 0.885,  cls_aux_loss: 0.0452, cls_aux_acc: 0.878, seg_loss: 0.2837, cam_loss: 0.6942, reg_loss: -0.4545 ...
+Iter: 52000; Elasped: 1 day, 12:59:55; ETA: 5:41:31; Itertime: 2.32; LR: 9.787e-06;
+ overall_loss: 0.1239, cls_loss: 0.0417, cls_acc: 0.897,  cls_aux_loss: 0.0439, cls_aux_acc: 0.884, seg_loss: 0.2545, cam_loss: 0.6941, reg_loss: -0.4375 ...
+Iter: 52200; Elasped: 1 day, 13:07:40; ETA: 5:32:52; Itertime: 2.32; LR: 9.566e-06;
+ overall_loss: 0.1201, cls_loss: 0.0422, cls_acc: 0.900,  cls_aux_loss: 0.0437, cls_aux_acc: 0.893, seg_loss: 0.2702, cam_loss: 0.6937, reg_loss: -0.5508 ...
+Iter: 52400; Elasped: 1 day, 13:15:24; ETA: 5:24:13; Itertime: 2.32; LR: 9.345e-06;
+ overall_loss: 0.1252, cls_loss: 0.0433, cls_acc: 0.890,  cls_aux_loss: 0.0453, cls_aux_acc: 0.887, seg_loss: 0.2744, cam_loss: 0.6938, reg_loss: -0.5096 ...
+Iter: 52600; Elasped: 1 day, 13:23:08; ETA: 5:15:34; Itertime: 2.32; LR: 9.124e-06;
+ overall_loss: 0.1229, cls_loss: 0.0413, cls_acc: 0.898,  cls_aux_loss: 0.0434, cls_aux_acc: 0.892, seg_loss: 0.2837, cam_loss: 0.6940, reg_loss: -0.4987 ...
+Iter: 52800; Elasped: 1 day, 13:30:54; ETA: 5:06:56; Itertime: 2.33; LR: 8.902e-06;
+ overall_loss: 0.1274, cls_loss: 0.0439, cls_acc: 0.896,  cls_aux_loss: 0.0472, cls_aux_acc: 0.885, seg_loss: 0.2723, cam_loss: 0.6939, reg_loss: -0.5118 ...
+Iter: 53000; Elasped: 1 day, 13:38:38; ETA: 4:58:18; Itertime: 2.32; LR: 8.679e-06;
+ overall_loss: 0.1266, cls_loss: 0.0432, cls_acc: 0.887,  cls_aux_loss: 0.0456, cls_aux_acc: 0.880, seg_loss: 0.2876, cam_loss: 0.6937, reg_loss: -0.5146 ...
+Iter: 53200; Elasped: 1 day, 13:46:22; ETA: 4:49:41; Itertime: 2.32; LR: 8.455e-06;
+ overall_loss: 0.1185, cls_loss: 0.0411, cls_acc: 0.897,  cls_aux_loss: 0.0427, cls_aux_acc: 0.889, seg_loss: 0.2590, cam_loss: 0.6936, reg_loss: -0.5179 ...
+Iter: 53400; Elasped: 1 day, 13:54:06; ETA: 4:41:04; Itertime: 2.32; LR: 8.231e-06;
+ overall_loss: 0.1307, cls_loss: 0.0442, cls_acc: 0.888,  cls_aux_loss: 0.0470, cls_aux_acc: 0.881, seg_loss: 0.3180, cam_loss: 0.6940, reg_loss: -0.5408 ...
+Iter: 53600; Elasped: 1 day, 14:01:50; ETA: 4:32:27; Itertime: 2.32; LR: 8.006e-06;
+ overall_loss: 0.1275, cls_loss: 0.0436, cls_acc: 0.897,  cls_aux_loss: 0.0457, cls_aux_acc: 0.891, seg_loss: 0.2680, cam_loss: 0.6941, reg_loss: -0.4644 ...
+Iter: 53800; Elasped: 1 day, 14:09:35; ETA: 4:23:51; Itertime: 2.32; LR: 7.781e-06;
+ overall_loss: 0.1229, cls_loss: 0.0401, cls_acc: 0.900,  cls_aux_loss: 0.0428, cls_aux_acc: 0.893, seg_loss: 0.2691, cam_loss: 0.6935, reg_loss: -0.4315 ...
+Iter: 54000; Elasped: 1 day, 14:17:19; ETA: 4:15:15; Itertime: 2.32; LR: 7.555e-06;
+ overall_loss: 0.1211, cls_loss: 0.0413, cls_acc: 0.907,  cls_aux_loss: 0.0430, cls_aux_acc: 0.900, seg_loss: 0.2525, cam_loss: 0.6938, reg_loss: -0.4626 ...
+model validating...
+current_rank 0
+store saving with size: 2500 at rank: 0
+store loaded with size: 5000
+teacher: cls:0.9239764150658965, clsaux: 0.9118239323971248
++----------------+--------+---------+--------+--------+---------+
+|     Class      |  CAM   | aux_CAM | Seg_ps | Seg_vd | Seg_crf |
++================+========+=========+========+========+=========+
+| _background_   | 79.890 | 80.110  | 81.590 | 81.720 | 81.730  |
++----------------+--------+---------+--------+--------+---------+
+| person         | 36.240 | 59.350  | 57.180 | 57.360 | 57.310  |
++----------------+--------+---------+--------+--------+---------+
+| bicycle        | 46.500 | 45.940  | 41.970 | 43.020 | 42.120  |
++----------------+--------+---------+--------+--------+---------+
+| car            | 44.400 | 44.360  | 49.870 | 51.330 | 51      |
++----------------+--------+---------+--------+--------+---------+
+| motorcycle     | 60.100 | 59.730  | 64.980 | 65.500 | 65.500  |
++----------------+--------+---------+--------+--------+---------+
+| airplane       | 70.370 | 69.810  | 75.180 | 75.190 | 75.380  |
++----------------+--------+---------+--------+--------+---------+
+| bus            | 65.030 | 62.540  | 68.520 | 68.980 | 69.010  |
++----------------+--------+---------+--------+--------+---------+
+| train          | 55.830 | 46.980  | 59.690 | 59.880 | 60.010  |
++----------------+--------+---------+--------+--------+---------+
+| truck          | 38.210 | 28.080  | 39.550 | 41.260 | 41.030  |
++----------------+--------+---------+--------+--------+---------+
+| boat           | 39.430 | 33.010  | 42.640 | 42.670 | 42.250  |
++----------------+--------+---------+--------+--------+---------+
+| traffic light  | 55.920 | 47.990  | 59.140 | 59.540 | 60.050  |
++----------------+--------+---------+--------+--------+---------+
+| fire hydrant   | 74.160 | 54.480  | 72.080 | 74.130 | 74.290  |
++----------------+--------+---------+--------+--------+---------+
+| stop sign      | 82.380 | 58.690  | 75.400 | 79.820 | 80.320  |
++----------------+--------+---------+--------+--------+---------+
+| parking meter  | 72.550 | 62.650  | 71.530 | 71.900 | 71.900  |
++----------------+--------+---------+--------+--------+---------+
+| bench          | 48     | 49.090  | 46.590 | 48.560 | 48.220  |
++----------------+--------+---------+--------+--------+---------+
+| bird           | 57.470 | 65.740  | 59.830 | 61.200 | 61.110  |
++----------------+--------+---------+--------+--------+---------+
+| cat            | 76.050 | 69.930  | 73.690 | 76.740 | 76.940  |
++----------------+--------+---------+--------+--------+---------+
+| dog            | 63.070 | 68.040  | 63.300 | 66.600 | 66.480  |
++----------------+--------+---------+--------+--------+---------+
+| horse          | 62.940 | 66.930  | 69.570 | 69.720 | 69.800  |
++----------------+--------+---------+--------+--------+---------+
+| sheep          | 65.290 | 74.490  | 74.370 | 74.790 | 74.920  |
++----------------+--------+---------+--------+--------+---------+
+| cow            | 60.360 | 61.840  | 67.110 | 67.720 | 67.790  |
++----------------+--------+---------+--------+--------+---------+
+| elephant       | 64.780 | 74.880  | 77.620 | 77.850 | 78.060  |
++----------------+--------+---------+--------+--------+---------+
+| bear           | 71.640 | 72.900  | 78.230 | 79.210 | 79.330  |
++----------------+--------+---------+--------+--------+---------+
+| zebra          | 60.040 | 75.270  | 73.310 | 73.300 | 73.340  |
++----------------+--------+---------+--------+--------+---------+
+| giraffe        | 43.040 | 56.850  | 53.650 | 53.670 | 53.460  |
++----------------+--------+---------+--------+--------+---------+
+| backpack       | 32.910 | 32.790  | 22.200 | 27.520 | 27.260  |
++----------------+--------+---------+--------+--------+---------+
+| umbrella       | 73.030 | 75.660  | 77     | 78.560 | 78.910  |
++----------------+--------+---------+--------+--------+---------+
+| handbag        | 12.660 | 22.220  | 7.800  | 9.660  | 9.340   |
++----------------+--------+---------+--------+--------+---------+
+| tie            | 42.220 | 36.250  | 42.760 | 43.150 | 43.030  |
++----------------+--------+---------+--------+--------+---------+
+| suitcase       | 58.550 | 56.680  | 59.590 | 61.210 | 61.330  |
++----------------+--------+---------+--------+--------+---------+
+| frisbee        | 74.340 | 55.170  | 70.660 | 71.930 | 72.810  |
++----------------+--------+---------+--------+--------+---------+
+| skis           | 23.710 | 9.660   | 27.590 | 29.460 | 30.070  |
++----------------+--------+---------+--------+--------+---------+
+| snowboard      | 40.900 | 30.460  | 39.070 | 45.450 | 45.650  |
++----------------+--------+---------+--------+--------+---------+
+| sports ball    | 49.430 | 16.170  | 46.650 | 47.240 | 48.190  |
++----------------+--------+---------+--------+--------+---------+
+| kite           | 49.370 | 43.780  | 49.980 | 50.210 | 51.010  |
++----------------+--------+---------+--------+--------+---------+
+| baseball bat   | 9.670  | 2.800   | 5.490  | 5.620  | 5.900   |
++----------------+--------+---------+--------+--------+---------+
+| baseball glove | 45.050 | 17.940  | 47.130 | 46.710 | 47.720  |
++----------------+--------+---------+--------+--------+---------+
+| skateboard     | 26.030 | 20.350  | 16.050 | 16.700 | 16.550  |
++----------------+--------+---------+--------+--------+---------+
+| surfboard      | 27.940 | 16.070  | 18.650 | 19.100 | 19.280  |
++----------------+--------+---------+--------+--------+---------+
+| tennis racket  | 5.840  | 4.170   | 3.450  | 3.450  | 3.390   |
++----------------+--------+---------+--------+--------+---------+
+| bottle         | 27.590 | 28.250  | 24.050 | 25.470 | 24.920  |
++----------------+--------+---------+--------+--------+---------+
+| wine glass     | 37.320 | 38.670  | 35.870 | 36.920 | 36.890  |
++----------------+--------+---------+--------+--------+---------+
+| cup            | 36.620 | 33.500  | 32.670 | 36.210 | 36.090  |
++----------------+--------+---------+--------+--------+---------+
+| fork           | 23.500 | 10.610  | 17.720 | 23.610 | 23.550  |
++----------------+--------+---------+--------+--------+---------+
+| knife          | 39.710 | 26.620  | 31.120 | 37.940 | 37.840  |
++----------------+--------+---------+--------+--------+---------+
+| spoon          | 20.670 | 8.290   | 12.450 | 14.280 | 14.570  |
++----------------+--------+---------+--------+--------+---------+
+| bowl           | 18.540 | 27.060  | 21.860 | 23.690 | 23.420  |
++----------------+--------+---------+--------+--------+---------+
+| banana         | 70.070 | 68.420  | 70.210 | 72.390 | 72.750  |
++----------------+--------+---------+--------+--------+---------+
+| apple          | 55.480 | 58.380  | 54.810 | 59.820 | 60      |
++----------------+--------+---------+--------+--------+---------+
+| sandwich       | 46.480 | 42.470  | 42.150 | 45.720 | 45.520  |
++----------------+--------+---------+--------+--------+---------+
+| orange         | 70.350 | 67.230  | 73.540 | 74.670 | 75.090  |
++----------------+--------+---------+--------+--------+---------+
+| broccoli       | 47.750 | 54.650  | 48.890 | 51.010 | 51.150  |
++----------------+--------+---------+--------+--------+---------+
+| carrot         | 60.780 | 62.460  | 55.140 | 61.840 | 62.290  |
++----------------+--------+---------+--------+--------+---------+
+| hot dog        | 67.710 | 42.900  | 63.580 | 69.050 | 69.780  |
++----------------+--------+---------+--------+--------+---------+
+| pizza          | 44.600 | 48.190  | 45.560 | 48.310 | 48.130  |
++----------------+--------+---------+--------+--------+---------+
+| donut          | 72.670 | 71.160  | 66.880 | 73.600 | 73.960  |
++----------------+--------+---------+--------+--------+---------+
+| cake           | 49.730 | 47.480  | 45.230 | 52.500 | 52.590  |
++----------------+--------+---------+--------+--------+---------+
+| chair          | 26.610 | 35.490  | 28.410 | 31.320 | 30.900  |
++----------------+--------+---------+--------+--------+---------+
+| couch          | 50.970 | 44.620  | 47.930 | 52     | 52.080  |
++----------------+--------+---------+--------+--------+---------+
+| potted plant   | 23.970 | 28.030  | 19.310 | 20.850 | 20.370  |
++----------------+--------+---------+--------+--------+---------+
+| bed            | 55.560 | 53.450  | 56.290 | 58.690 | 58.800  |
++----------------+--------+---------+--------+--------+---------+
+| dining table   | 18.030 | 27.750  | 21.600 | 22.880 | 22.810  |
++----------------+--------+---------+--------+--------+---------+
+| toilet         | 52.600 | 63.630  | 60.920 | 61.550 | 61.350  |
++----------------+--------+---------+--------+--------+---------+
+| tv             | 47.290 | 42.660  | 50.080 | 51.490 | 51.350  |
++----------------+--------+---------+--------+--------+---------+
+| laptop         | 63.020 | 64.410  | 66.820 | 67     | 67.060  |
++----------------+--------+---------+--------+--------+---------+
+| mouse          | 49.700 | 16.850  | 44.530 | 47.380 | 47.810  |
++----------------+--------+---------+--------+--------+---------+
+| remote         | 61.100 | 48.390  | 59.850 | 66.790 | 67.120  |
++----------------+--------+---------+--------+--------+---------+
+| keyboard       | 47.020 | 51.570  | 49.960 | 50.090 | 49.730  |
++----------------+--------+---------+--------+--------+---------+
+| cell phone     | 51.620 | 50.450  | 57.860 | 60.440 | 60.560  |
++----------------+--------+---------+--------+--------+---------+
+| microwave      | 56.570 | 49.810  | 55.340 | 58.430 | 58.570  |
++----------------+--------+---------+--------+--------+---------+
+| oven           | 35.900 | 34.400  | 37.260 | 40     | 39.790  |
++----------------+--------+---------+--------+--------+---------+
+| toaster        | 0.390  | 4.250   | 0      | 0      | 0       |
++----------------+--------+---------+--------+--------+---------+
+| sink           | 33.410 | 33.560  | 37.180 | 38.900 | 38.970  |
++----------------+--------+---------+--------+--------+---------+
+| refrigerator   | 48.540 | 54.120  | 55.350 | 56.680 | 56.780  |
++----------------+--------+---------+--------+--------+---------+
+| book           | 36.060 | 38.800  | 34.410 | 36.860 | 36.500  |
++----------------+--------+---------+--------+--------+---------+
+| clock          | 61.350 | 51.130  | 61.370 | 61.860 | 61.550  |
++----------------+--------+---------+--------+--------+---------+
+| vase           | 33.780 | 31.350  | 34.350 | 35.400 | 35.540  |
++----------------+--------+---------+--------+--------+---------+
+| scissors       | 60.600 | 55.140  | 53.280 | 54.240 | 53.820  |
++----------------+--------+---------+--------+--------+---------+
+| teddy bear     | 66.230 | 67.190  | 68.280 | 68.390 | 68.580  |
++----------------+--------+---------+--------+--------+---------+
+| hair drier     | 41.830 | 15.100  | 5.340  | 16.990 | 16.730  |
++----------------+--------+---------+--------+--------+---------+
+| toothbrush     | 36.600 | 24.990  | 39.740 | 40.060 | 40.460  |
++----------------+--------+---------+--------+--------+---------+
+| mIoU           | 48.317 | 45.103  | 48.369 | 50.407 | 50.464  |
++----------------+--------+---------+--------+--------+---------+
+Iter: 54200; Elasped: 1 day, 15:21:38; ETA: 4:12:43; Itertime: 19.29; LR: 7.328e-06;
+ overall_loss: 0.1262, cls_loss: 0.0439, cls_acc: 0.886,  cls_aux_loss: 0.0457, cls_aux_acc: 0.877, seg_loss: 0.2772, cam_loss: 0.6938, reg_loss: -0.5163 ...
+Iter: 54400; Elasped: 1 day, 15:29:22; ETA: 4:03:54; Itertime: 2.32; LR: 7.100e-06;
+ overall_loss: 0.1249, cls_loss: 0.0418, cls_acc: 0.896,  cls_aux_loss: 0.0444, cls_aux_acc: 0.890, seg_loss: 0.2526, cam_loss: 0.6936, reg_loss: -0.4247 ...
+Iter: 54600; Elasped: 1 day, 15:37:06; ETA: 3:55:05; Itertime: 2.32; LR: 6.871e-06;
+ overall_loss: 0.1282, cls_loss: 0.0434, cls_acc: 0.894,  cls_aux_loss: 0.0461, cls_aux_acc: 0.882, seg_loss: 0.2590, cam_loss: 0.6941, reg_loss: -0.4381 ...
+Iter: 54800; Elasped: 1 day, 15:44:51; ETA: 3:46:17; Itertime: 2.32; LR: 6.642e-06;
+ overall_loss: 0.1202, cls_loss: 0.0397, cls_acc: 0.897,  cls_aux_loss: 0.0417, cls_aux_acc: 0.891, seg_loss: 0.2768, cam_loss: 0.6937, reg_loss: -0.4703 ...
+Iter: 55000; Elasped: 1 day, 15:52:35; ETA: 3:37:30; Itertime: 2.32; LR: 6.412e-06;
+ overall_loss: 0.1228, cls_loss: 0.0422, cls_acc: 0.894,  cls_aux_loss: 0.0435, cls_aux_acc: 0.889, seg_loss: 0.2708, cam_loss: 0.6939, reg_loss: -0.4931 ...
+Iter: 55200; Elasped: 1 day, 16:00:20; ETA: 3:28:43; Itertime: 2.32; LR: 6.180e-06;
+ overall_loss: 0.1176, cls_loss: 0.0408, cls_acc: 0.897,  cls_aux_loss: 0.0421, cls_aux_acc: 0.895, seg_loss: 0.2445, cam_loss: 0.6937, reg_loss: -0.4891 ...
+Iter: 55400; Elasped: 1 day, 16:08:04; ETA: 3:19:56; Itertime: 2.32; LR: 5.948e-06;
+ overall_loss: 0.1219, cls_loss: 0.0412, cls_acc: 0.901,  cls_aux_loss: 0.0435, cls_aux_acc: 0.894, seg_loss: 0.2526, cam_loss: 0.6939, reg_loss: -0.4540 ...
+Iter: 55600; Elasped: 1 day, 16:15:49; ETA: 3:11:10; Itertime: 2.33; LR: 5.715e-06;
+ overall_loss: 0.1258, cls_loss: 0.0440, cls_acc: 0.897,  cls_aux_loss: 0.0460, cls_aux_acc: 0.888, seg_loss: 0.2262, cam_loss: 0.6939, reg_loss: -0.4307 ...
+Iter: 55800; Elasped: 1 day, 16:23:34; ETA: 3:02:25; Itertime: 2.32; LR: 5.481e-06;
+ overall_loss: 0.1253, cls_loss: 0.0439, cls_acc: 0.890,  cls_aux_loss: 0.0468, cls_aux_acc: 0.878, seg_loss: 0.2571, cam_loss: 0.6941, reg_loss: -0.5170 ...
+Iter: 56000; Elasped: 1 day, 16:31:18; ETA: 2:53:39; Itertime: 2.32; LR: 5.245e-06;
+ overall_loss: 0.1195, cls_loss: 0.0422, cls_acc: 0.897,  cls_aux_loss: 0.0446, cls_aux_acc: 0.891, seg_loss: 0.2453, cam_loss: 0.6939, reg_loss: -0.5288 ...
+Iter: 56200; Elasped: 1 day, 16:39:02; ETA: 2:44:55; Itertime: 2.32; LR: 5.009e-06;
+ overall_loss: 0.1294, cls_loss: 0.0448, cls_acc: 0.891,  cls_aux_loss: 0.0475, cls_aux_acc: 0.885, seg_loss: 0.2644, cam_loss: 0.6940, reg_loss: -0.4803 ...
+Iter: 56400; Elasped: 1 day, 16:46:47; ETA: 2:36:10; Itertime: 2.32; LR: 4.771e-06;
+ overall_loss: 0.1231, cls_loss: 0.0417, cls_acc: 0.897,  cls_aux_loss: 0.0434, cls_aux_acc: 0.895, seg_loss: 0.2468, cam_loss: 0.6940, reg_loss: -0.4287 ...
+Iter: 56600; Elasped: 1 day, 16:54:32; ETA: 2:27:26; Itertime: 2.32; LR: 4.532e-06;
+ overall_loss: 0.1225, cls_loss: 0.0427, cls_acc: 0.887,  cls_aux_loss: 0.0436, cls_aux_acc: 0.885, seg_loss: 0.2458, cam_loss: 0.6938, reg_loss: -0.4609 ...
+Iter: 56800; Elasped: 1 day, 17:02:16; ETA: 2:18:43; Itertime: 2.32; LR: 4.291e-06;
+ overall_loss: 0.1131, cls_loss: 0.0380, cls_acc: 0.915,  cls_aux_loss: 0.0395, cls_aux_acc: 0.910, seg_loss: 0.2187, cam_loss: 0.6936, reg_loss: -0.4201 ...
+Iter: 57000; Elasped: 1 day, 17:10:00; ETA: 2:10:00; Itertime: 2.32; LR: 4.049e-06;
+ overall_loss: 0.1252, cls_loss: 0.0428, cls_acc: 0.899,  cls_aux_loss: 0.0454, cls_aux_acc: 0.893, seg_loss: 0.2591, cam_loss: 0.6939, reg_loss: -0.4720 ...
+Iter: 57200; Elasped: 1 day, 17:17:44; ETA: 2:01:17; Itertime: 2.32; LR: 3.805e-06;
+ overall_loss: 0.1162, cls_loss: 0.0399, cls_acc: 0.900,  cls_aux_loss: 0.0412, cls_aux_acc: 0.898, seg_loss: 0.2263, cam_loss: 0.6937, reg_loss: -0.4444 ...
+Iter: 57400; Elasped: 1 day, 17:25:29; ETA: 1:52:34; Itertime: 2.32; LR: 3.560e-06;
+ overall_loss: 0.1230, cls_loss: 0.0407, cls_acc: 0.901,  cls_aux_loss: 0.0427, cls_aux_acc: 0.894, seg_loss: 0.2732, cam_loss: 0.6939, reg_loss: -0.4494 ...
+Iter: 57600; Elasped: 1 day, 17:33:14; ETA: 1:43:53; Itertime: 2.33; LR: 3.313e-06;
+ overall_loss: 0.1175, cls_loss: 0.0410, cls_acc: 0.905,  cls_aux_loss: 0.0427, cls_aux_acc: 0.902, seg_loss: 0.2504, cam_loss: 0.6938, reg_loss: -0.5167 ...
+Iter: 57800; Elasped: 1 day, 17:40:58; ETA: 1:35:11; Itertime: 2.32; LR: 3.063e-06;
+ overall_loss: 0.1235, cls_loss: 0.0418, cls_acc: 0.898,  cls_aux_loss: 0.0444, cls_aux_acc: 0.889, seg_loss: 0.2460, cam_loss: 0.6937, reg_loss: -0.4385 ...
+Iter: 58000; Elasped: 1 day, 17:48:42; ETA: 1:26:30; Itertime: 2.32; LR: 2.811e-06;
+ overall_loss: 0.1188, cls_loss: 0.0411, cls_acc: 0.900,  cls_aux_loss: 0.0429, cls_aux_acc: 0.890, seg_loss: 0.2397, cam_loss: 0.6939, reg_loss: -0.4762 ...
+Iter: 58200; Elasped: 1 day, 17:56:27; ETA: 1:17:49; Itertime: 2.32; LR: 2.557e-06;
+ overall_loss: 0.1213, cls_loss: 0.0416, cls_acc: 0.895,  cls_aux_loss: 0.0434, cls_aux_acc: 0.888, seg_loss: 0.2388, cam_loss: 0.6937, reg_loss: -0.4461 ...
+Iter: 58400; Elasped: 1 day, 18:04:10; ETA: 1:09:09; Itertime: 2.32; LR: 2.300e-06;
+ overall_loss: 0.1201, cls_loss: 0.0419, cls_acc: 0.898,  cls_aux_loss: 0.0429, cls_aux_acc: 0.895, seg_loss: 0.2389, cam_loss: 0.6937, reg_loss: -0.4646 ...
+Iter: 58600; Elasped: 1 day, 18:11:54; ETA: 1:00:29; Itertime: 2.32; LR: 2.040e-06;
+ overall_loss: 0.1139, cls_loss: 0.0393, cls_acc: 0.903,  cls_aux_loss: 0.0405, cls_aux_acc: 0.896, seg_loss: 0.2235, cam_loss: 0.6935, reg_loss: -0.4586 ...
+Iter: 58800; Elasped: 1 day, 18:19:39; ETA: 0:51:49; Itertime: 2.33; LR: 1.776e-06;
+ overall_loss: 0.1209, cls_loss: 0.0414, cls_acc: 0.899,  cls_aux_loss: 0.0432, cls_aux_acc: 0.893, seg_loss: 0.2376, cam_loss: 0.6939, reg_loss: -0.4438 ...
+Iter: 59000; Elasped: 1 day, 18:27:23; ETA: 0:43:10; Itertime: 2.32; LR: 1.507e-06;
+ overall_loss: 0.1215, cls_loss: 0.0416, cls_acc: 0.898,  cls_aux_loss: 0.0435, cls_aux_acc: 0.890, seg_loss: 0.2337, cam_loss: 0.6939, reg_loss: -0.4342 ...
+Iter: 59200; Elasped: 1 day, 18:35:08; ETA: 0:34:31; Itertime: 2.32; LR: 1.233e-06;
+ overall_loss: 0.1192, cls_loss: 0.0423, cls_acc: 0.902,  cls_aux_loss: 0.0440, cls_aux_acc: 0.898, seg_loss: 0.2318, cam_loss: 0.6936, reg_loss: -0.4998 ...
+Iter: 59400; Elasped: 1 day, 18:42:52; ETA: 0:25:53; Itertime: 2.32; LR: 9.524e-07;
+ overall_loss: 0.1201, cls_loss: 0.0413, cls_acc: 0.897,  cls_aux_loss: 0.0429, cls_aux_acc: 0.893, seg_loss: 0.2506, cam_loss: 0.6936, reg_loss: -0.4765 ...
+Iter: 59600; Elasped: 1 day, 18:50:37; ETA: 0:17:15; Itertime: 2.32; LR: 6.617e-07;
+ overall_loss: 0.1219, cls_loss: 0.0416, cls_acc: 0.897,  cls_aux_loss: 0.0435, cls_aux_acc: 0.892, seg_loss: 0.2749, cam_loss: 0.6939, reg_loss: -0.5075 ...
+Iter: 59800; Elasped: 1 day, 18:58:21; ETA: 0:08:37; Itertime: 2.32; LR: 3.554e-07;
+ overall_loss: 0.1256, cls_loss: 0.0432, cls_acc: 0.891,  cls_aux_loss: 0.0448, cls_aux_acc: 0.888, seg_loss: 0.2537, cam_loss: 0.6939, reg_loss: -0.4492 ...
+Iter: 60000; Elasped: 1 day, 19:06:05; ETA: 0:00:00; Itertime: 2.32; LR: 3.005e-09;
+ overall_loss: 0.1219, cls_loss: 0.0400, cls_acc: 0.905,  cls_aux_loss: 0.0427, cls_aux_acc: 0.896, seg_loss: 0.2575, cam_loss: 0.6939, reg_loss: -0.4262 ...
+model validating...
+current_rank 0
+store saving with size: 2500 at rank: 0
+store loaded with size: 5000
+teacher: cls:0.923086287821515, clsaux: 0.9143249543398937
++----------------+--------+---------+--------+--------+---------+
+|     Class      |  CAM   | aux_CAM | Seg_ps | Seg_vd | Seg_crf |
++================+========+=========+========+========+=========+
+| _background_   | 79.680 | 80.140  | 81.390 | 81.500 | 81.500  |
++----------------+--------+---------+--------+--------+---------+
+| person         | 35.310 | 60.860  | 56.170 | 56.350 | 56.290  |
++----------------+--------+---------+--------+--------+---------+
+| bicycle        | 44.020 | 43      | 37.910 | 38.490 | 37.320  |
++----------------+--------+---------+--------+--------+---------+
+| car            | 43.930 | 45.710  | 47.620 | 48.790 | 48.370  |
++----------------+--------+---------+--------+--------+---------+
+| motorcycle     | 58.580 | 58.790  | 64.040 | 64.350 | 64.340  |
++----------------+--------+---------+--------+--------+---------+
+| airplane       | 68.390 | 69.010  | 74.220 | 74.230 | 74.370  |
++----------------+--------+---------+--------+--------+---------+
+| bus            | 65.270 | 60.900  | 67.900 | 68.250 | 68.200  |
++----------------+--------+---------+--------+--------+---------+
+| train          | 55.660 | 50.560  | 59.450 | 59.610 | 59.710  |
++----------------+--------+---------+--------+--------+---------+
+| truck          | 36.940 | 27.760  | 39.120 | 40.610 | 40.380  |
++----------------+--------+---------+--------+--------+---------+
+| boat           | 38.740 | 34.080  | 41.590 | 41.630 | 41.160  |
++----------------+--------+---------+--------+--------+---------+
+| traffic light  | 55.340 | 48.890  | 59.110 | 59.480 | 60.080  |
++----------------+--------+---------+--------+--------+---------+
+| fire hydrant   | 74.800 | 51.210  | 72.740 | 74.500 | 74.690  |
++----------------+--------+---------+--------+--------+---------+
+| stop sign      | 82.360 | 59.240  | 76.480 | 80.630 | 81.080  |
++----------------+--------+---------+--------+--------+---------+
+| parking meter  | 72.020 | 56.280  | 71.570 | 71.610 | 71.500  |
++----------------+--------+---------+--------+--------+---------+
+| bench          | 46.210 | 49.160  | 44.610 | 46.030 | 45.650  |
++----------------+--------+---------+--------+--------+---------+
+| bird           | 56.790 | 66.690  | 59.520 | 60.980 | 60.900  |
++----------------+--------+---------+--------+--------+---------+
+| cat            | 75.450 | 69.960  | 73.550 | 76.560 | 76.740  |
++----------------+--------+---------+--------+--------+---------+
+| dog            | 62.930 | 65.410  | 63.190 | 66.680 | 66.570  |
++----------------+--------+---------+--------+--------+---------+
+| horse          | 61.590 | 64.010  | 68.670 | 68.800 | 68.850  |
++----------------+--------+---------+--------+--------+---------+
+| sheep          | 65.130 | 73.120  | 73.900 | 74.140 | 74.250  |
++----------------+--------+---------+--------+--------+---------+
+| cow            | 58.610 | 57.840  | 64.610 | 65     | 64.920  |
++----------------+--------+---------+--------+--------+---------+
+| elephant       | 62.820 | 75.370  | 76.810 | 77.080 | 77.300  |
++----------------+--------+---------+--------+--------+---------+
+| bear           | 70.240 | 71.200  | 75.960 | 76.140 | 76.300  |
++----------------+--------+---------+--------+--------+---------+
+| zebra          | 61.120 | 75.340  | 72.930 | 72.930 | 72.950  |
++----------------+--------+---------+--------+--------+---------+
+| giraffe        | 42.070 | 57.340  | 52.270 | 52.290 | 52.060  |
++----------------+--------+---------+--------+--------+---------+
+| backpack       | 33.010 | 32.540  | 22.610 | 28.490 | 28.220  |
++----------------+--------+---------+--------+--------+---------+
+| umbrella       | 73.820 | 76.020  | 76.520 | 78.340 | 78.670  |
++----------------+--------+---------+--------+--------+---------+
+| handbag        | 11.150 | 23.280  | 7.750  | 9.480  | 9.070   |
++----------------+--------+---------+--------+--------+---------+
+| tie            | 41.120 | 37.440  | 43.790 | 44.190 | 44.210  |
++----------------+--------+---------+--------+--------+---------+
+| suitcase       | 58.250 | 56.660  | 59.710 | 61.300 | 61.360  |
++----------------+--------+---------+--------+--------+---------+
+| frisbee        | 73.630 | 54.600  | 71.160 | 72.480 | 73.260  |
++----------------+--------+---------+--------+--------+---------+
+| skis           | 22.260 | 8.360   | 27.170 | 28.850 | 29.500  |
++----------------+--------+---------+--------+--------+---------+
+| snowboard      | 42.230 | 24.420  | 37.920 | 44.610 | 45.070  |
++----------------+--------+---------+--------+--------+---------+
+| sports ball    | 51.190 | 32.200  | 47.680 | 47.950 | 48.820  |
++----------------+--------+---------+--------+--------+---------+
+| kite           | 49.980 | 42.940  | 49.690 | 49.830 | 50.510  |
++----------------+--------+---------+--------+--------+---------+
+| baseball bat   | 11.530 | 3.120   | 7.020  | 7.100  | 7.500   |
++----------------+--------+---------+--------+--------+---------+
+| baseball glove | 44.220 | 23.520  | 47.280 | 47.040 | 47.990  |
++----------------+--------+---------+--------+--------+---------+
+| skateboard     | 25.030 | 20.990  | 15.900 | 16.560 | 16.380  |
++----------------+--------+---------+--------+--------+---------+
+| surfboard      | 30.290 | 17.230  | 20.970 | 21.330 | 21.530  |
++----------------+--------+---------+--------+--------+---------+
+| tennis racket  | 6.040  | 4.260   | 3.500  | 3.500  | 3.430   |
++----------------+--------+---------+--------+--------+---------+
+| bottle         | 27.560 | 28.920  | 23.580 | 24.610 | 24.140  |
++----------------+--------+---------+--------+--------+---------+
+| wine glass     | 36.110 | 37.060  | 34.210 | 35.300 | 35.160  |
++----------------+--------+---------+--------+--------+---------+
+| cup            | 36.990 | 34.430  | 33.800 | 37.550 | 37.480  |
++----------------+--------+---------+--------+--------+---------+
+| fork           | 23.720 | 13.440  | 18.260 | 23.280 | 23.130  |
++----------------+--------+---------+--------+--------+---------+
+| knife          | 41.630 | 29.480  | 33.270 | 40.800 | 40.820  |
++----------------+--------+---------+--------+--------+---------+
+| spoon          | 19.940 | 11.190  | 11.190 | 12.720 | 12.290  |
++----------------+--------+---------+--------+--------+---------+
+| bowl           | 18.300 | 27.540  | 20.680 | 22.310 | 22.020  |
++----------------+--------+---------+--------+--------+---------+
+| banana         | 70.820 | 71.780  | 71.160 | 73.570 | 73.870  |
++----------------+--------+---------+--------+--------+---------+
+| apple          | 56.560 | 58.630  | 55.170 | 61.150 | 61.320  |
++----------------+--------+---------+--------+--------+---------+
+| sandwich       | 46.020 | 40.850  | 42.050 | 44.930 | 44.790  |
++----------------+--------+---------+--------+--------+---------+
+| orange         | 70.180 | 69.320  | 73.450 | 74.240 | 74.680  |
++----------------+--------+---------+--------+--------+---------+
+| broccoli       | 48.090 | 54.360  | 49.710 | 51.490 | 51.650  |
++----------------+--------+---------+--------+--------+---------+
+| carrot         | 60.930 | 62.910  | 55.150 | 62.050 | 62.450  |
++----------------+--------+---------+--------+--------+---------+
+| hot dog        | 66.300 | 48.280  | 61.500 | 66.670 | 67.100  |
++----------------+--------+---------+--------+--------+---------+
+| pizza          | 40.610 | 44.540  | 41.660 | 43.860 | 43.640  |
++----------------+--------+---------+--------+--------+---------+
+| donut          | 71.540 | 71.670  | 68     | 76.020 | 76.460  |
++----------------+--------+---------+--------+--------+---------+
+| cake           | 49.100 | 43.230  | 44.880 | 52.070 | 52.140  |
++----------------+--------+---------+--------+--------+---------+
+| chair          | 26.460 | 35.660  | 28.300 | 30.950 | 30.530  |
++----------------+--------+---------+--------+--------+---------+
+| couch          | 48.130 | 45.030  | 46.510 | 50.240 | 50.210  |
++----------------+--------+---------+--------+--------+---------+
+| potted plant   | 23.890 | 28.910  | 21.860 | 23.870 | 23.500  |
++----------------+--------+---------+--------+--------+---------+
+| bed            | 54.540 | 50.850  | 55.740 | 58.070 | 58.130  |
++----------------+--------+---------+--------+--------+---------+
+| dining table   | 16.920 | 25.720  | 20.300 | 21.420 | 21.320  |
++----------------+--------+---------+--------+--------+---------+
+| toilet         | 50.490 | 62.280  | 59.780 | 60.500 | 60.310  |
++----------------+--------+---------+--------+--------+---------+
+| tv             | 46.010 | 45.070  | 48.920 | 50.400 | 50.180  |
++----------------+--------+---------+--------+--------+---------+
+| laptop         | 62.280 | 62.320  | 64.180 | 64.580 | 64.520  |
++----------------+--------+---------+--------+--------+---------+
+| mouse          | 46.240 | 21.340  | 40.660 | 44.240 | 43.900  |
++----------------+--------+---------+--------+--------+---------+
+| remote         | 61.860 | 42.150  | 61.330 | 68.620 | 69.150  |
++----------------+--------+---------+--------+--------+---------+
+| keyboard       | 45.610 | 50.360  | 54.080 | 54.380 | 54.040  |
++----------------+--------+---------+--------+--------+---------+
+| cell phone     | 51.360 | 51      | 57.290 | 59.480 | 59.440  |
++----------------+--------+---------+--------+--------+---------+
+| microwave      | 55.610 | 46.560  | 53.890 | 57.960 | 57.940  |
++----------------+--------+---------+--------+--------+---------+
+| oven           | 33.130 | 35.850  | 35.440 | 37.990 | 37.750  |
++----------------+--------+---------+--------+--------+---------+
+| toaster        | 0.060  | 3.870   | 0      | 0      | 0       |
++----------------+--------+---------+--------+--------+---------+
+| sink           | 31.800 | 32.930  | 35.400 | 36.930 | 36.870  |
++----------------+--------+---------+--------+--------+---------+
+| refrigerator   | 48.540 | 55.140  | 54.850 | 56.400 | 56.450  |
++----------------+--------+---------+--------+--------+---------+
+| book           | 34.650 | 38.590  | 33.890 | 36.300 | 35.910  |
++----------------+--------+---------+--------+--------+---------+
+| clock          | 59.840 | 55.720  | 61.590 | 61.930 | 61.720  |
++----------------+--------+---------+--------+--------+---------+
+| vase           | 33.400 | 33.150  | 34.430 | 35.810 | 35.960  |
++----------------+--------+---------+--------+--------+---------+
+| scissors       | 59.210 | 52.770  | 52.360 | 53.670 | 53.250  |
++----------------+--------+---------+--------+--------+---------+
+| teddy bear     | 65.590 | 66.010  | 66.340 | 66.630 | 66.770  |
++----------------+--------+---------+--------+--------+---------+
+| hair drier     | 41.730 | 13.010  | 0.820  | 7.890  | 6.660   |
++----------------+--------+---------+--------+--------+---------+
+| toothbrush     | 37.140 | 27.570  | 39.680 | 40.530 | 40.710  |
++----------------+--------+---------+--------+--------+---------+
+| mIoU           | 47.736 | 45.172  | 47.893 | 49.866 | 49.869  |
++----------------+--------+---------+--------+--------+---------+
+Training time 1 day, 20:02:49 Best val Seg IoU: 50.87
+Perform final validation on best model
+here pretrained
+model validating...
+current_rank 0
+store saving with size: 20068 at rank: 0
+store loaded with size: 40136
++----------------+--------+---------+
+|     Class      | Seg_vd | Seg_crf |
++================+========+=========+
+| _background_   | 84.010 | 84.070  |
++----------------+--------+---------+
+| person         | 70.230 | 70.380  |
++----------------+--------+---------+
+| bicycle        | 52.660 | 52.490  |
++----------------+--------+---------+
+| car            | 54.320 | 54.380  |
++----------------+--------+---------+
+| motorcycle     | 71.900 | 71.900  |
++----------------+--------+---------+
+| airplane       | 73.750 | 74.050  |
++----------------+--------+---------+
+| bus            | 77.200 | 77.250  |
++----------------+--------+---------+
+| train          | 59.980 | 60.030  |
++----------------+--------+---------+
+| truck          | 55.430 | 55.430  |
++----------------+--------+---------+
+| boat           | 52.110 | 52.170  |
++----------------+--------+---------+
+| traffic light  | 54.860 | 55.180  |
++----------------+--------+---------+
+| fire hydrant   | 78.680 | 78.890  |
++----------------+--------+---------+
+| stop sign      | 81.900 | 82.200  |
++----------------+--------+---------+
+| parking meter  | 71.360 | 71.510  |
++----------------+--------+---------+
+| bench          | 50.350 | 50.280  |
++----------------+--------+---------+
+| bird           | 65.350 | 65.420  |
++----------------+--------+---------+
+| cat            | 79.610 | 79.810  |
++----------------+--------+---------+
+| dog            | 72.730 | 72.870  |
++----------------+--------+---------+
+| horse          | 71.360 | 71.490  |
++----------------+--------+---------+
+| sheep          | 74.180 | 74.330  |
++----------------+--------+---------+
+| cow            | 73.930 | 74.050  |
++----------------+--------+---------+
+| elephant       | 81.780 | 81.930  |
++----------------+--------+---------+
+| bear           | 85.220 | 85.350  |
++----------------+--------+---------+
+| zebra          | 76.290 | 76.350  |
++----------------+--------+---------+
+| giraffe        | 68.560 | 68.570  |
++----------------+--------+---------+
+| backpack       | 28.760 | 28.680  |
++----------------+--------+---------+
+| umbrella       | 73.200 | 73.450  |
++----------------+--------+---------+
+| handbag        | 12.280 | 11.940  |
++----------------+--------+---------+
+| tie            | 47.710 | 47.740  |
++----------------+--------+---------+
+| suitcase       | 63.710 | 63.850  |
++----------------+--------+---------+
+| frisbee        | 62.070 | 63.130  |
++----------------+--------+---------+
+| skis           | 22.320 | 22.550  |
++----------------+--------+---------+
+| snowboard      | 40.250 | 40.570  |
++----------------+--------+---------+
+| sports ball    | 32.780 | 33.130  |
++----------------+--------+---------+
+| kite           | 59.400 | 59.920  |
++----------------+--------+---------+
+| baseball bat   | 3.860  | 3.890   |
++----------------+--------+---------+
+| baseball glove | 37.440 | 37.980  |
++----------------+--------+---------+
+| skateboard     | 12.650 | 12.580  |
++----------------+--------+---------+
+| surfboard      | 16.530 | 16.580  |
++----------------+--------+---------+
+| tennis racket  | 7.300  | 7.260   |
++----------------+--------+---------+
+| bottle         | 35.150 | 35.120  |
++----------------+--------+---------+
+| wine glass     | 42.090 | 42.120  |
++----------------+--------+---------+
+| cup            | 33.060 | 33.140  |
++----------------+--------+---------+
+| fork           | 24.090 | 24.210  |
++----------------+--------+---------+
+| knife          | 32.820 | 32.920  |
++----------------+--------+---------+
+| spoon          | 9.170  | 9.020   |
++----------------+--------+---------+
+| bowl           | 23     | 22.880  |
++----------------+--------+---------+
+| banana         | 69.130 | 69.370  |
++----------------+--------+---------+
+| apple          | 61.060 | 61.300  |
++----------------+--------+---------+
+| sandwich       | 48.360 | 48.370  |
++----------------+--------+---------+
+| orange         | 69     | 69.230  |
++----------------+--------+---------+
+| broccoli       | 52.810 | 52.850  |
++----------------+--------+---------+
+| carrot         | 59     | 59.400  |
++----------------+--------+---------+
+| hot dog        | 59.690 | 59.900  |
++----------------+--------+---------+
+| pizza          | 56.360 | 56.510  |
++----------------+--------+---------+
+| donut          | 70.950 | 71.160  |
++----------------+--------+---------+
+| cake           | 56.930 | 57.050  |
++----------------+--------+---------+
+| chair          | 33.880 | 33.800  |
++----------------+--------+---------+
+| couch          | 57.970 | 58.100  |
++----------------+--------+---------+
+| potted plant   | 23.770 | 23.530  |
++----------------+--------+---------+
+| bed            | 61.520 | 61.570  |
++----------------+--------+---------+
+| dining table   | 29.230 | 29.240  |
++----------------+--------+---------+
+| toilet         | 69.750 | 69.790  |
++----------------+--------+---------+
+| tv             | 53.130 | 53.210  |
++----------------+--------+---------+
+| laptop         | 63.780 | 63.900  |
++----------------+--------+---------+
+| mouse          | 16.190 | 16.480  |
++----------------+--------+---------+
+| remote         | 48.820 | 49.180  |
++----------------+--------+---------+
+| keyboard       | 49.550 | 49.610  |
++----------------+--------+---------+
+| cell phone     | 66.030 | 66.230  |
++----------------+--------+---------+
+| microwave      | 53.240 | 53.210  |
++----------------+--------+---------+
+| oven           | 49.060 | 49.230  |
++----------------+--------+---------+
+| toaster        | 0      | 0       |
++----------------+--------+---------+
+| sink           | 41.700 | 41.980  |
++----------------+--------+---------+
+| refrigerator   | 61.850 | 62.010  |
++----------------+--------+---------+
+| book           | 37.940 | 37.880  |
++----------------+--------+---------+
+| clock          | 55.030 | 55.270  |
++----------------+--------+---------+
+| vase           | 33.800 | 33.850  |
++----------------+--------+---------+
+| scissors       | 54.720 | 54.700  |
++----------------+--------+---------+
+| teddy bear     | 69.260 | 69.380  |
++----------------+--------+---------+
+| hair drier     | 0.590  | 0.350   |
++----------------+--------+---------+
+| toothbrush     | 39.180 | 39.380  |
++----------------+--------+---------+
+| mIoU           | 50.996 | 51.112  |
++----------------+--------+---------+
