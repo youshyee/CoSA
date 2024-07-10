@@ -13,7 +13,7 @@ Class activation maps (CAMs) are commonly employed in weakly supervised semantic
 
 ## Framework Overview
 
-<img src="https://github.com/youshyee/CoSA/blob/main/assets/overview.png" alt="overview" width="1200"/>
+![overview](overview.png)
 
  We propose an end-to-end dual-stream weakly-supervised segmentation framework, capable of co-optimizing the segmentation prediction and CAMs by leveraging the swapped assignments, namely CAM pseudo-labels (CPL) and segmentation pseudo-labels (SPL). Our framework comprises two networks: an assignment network (AN) and an online network (ON), where the AN is responsible for generating pseudo-labels for training the ON. While the AN has identical architecture to the ON, it is updated through exponential moving average (EMA) of the ON. The diagram on the right provides an illustration of the architecture. Given weak-augmented images as input, the AN produces CPL to supervise segmentation in the ON . During training, the CPL is softened by reliability-based adaptive weighting (RAW), formed based on CAM perplexity estimation and dynamic thresholding. The AN also generates SPL which is utilized to supervise the CAMs. Further, the CAMs are regularized to contrastively separate the foreground from the background regions . Note that the ON is also trained for classification using the image-level class labels.
 
