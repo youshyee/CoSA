@@ -1,0 +1,5 @@
+theme: jekyll-theme-cayman
+title: "Weakly Supervised Co-training with Swapping Assignments for Semantic Segmentation"
+favicon: favicon.ico
+github:
+      is_project_page: true
