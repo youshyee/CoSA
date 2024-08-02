@@ -39,7 +39,10 @@ unzip ./test2014.zip
 
 #### 2.  Download Segmentation Labels
 
-[Here](https://drive.google.com/file/d/147kbmwiXUnd2dW9_j8L5L0qwFYHUcP9I/view?usp=share_link) to download the COCO segmentation labels `coco_anno.tar` and move it to `coco` dir.
+[Here](https://drive.google.com/file/d/147kbmwiXUnd2dW9_j8L5L0qwFYHUcP9I/view?usp=share_link) to download the COCO segmentation labels `coco_anno.tar` and move it to `coco` dir. Or use the following command to download it directly to the server:
+``` bash
+wget https://github.com/youshyee/CoSA/releases/download/ann_coco/coco_anno.tar
+```
 After that you should extract it by running:
 ```bash
 tar -xvf coco_anno.tar
@@ -68,7 +71,12 @@ wget http://host.robots.ox.ac.uk/pascal/VOC/voc2012/VOCtrainval_11-May-2012.tar
 tar –xvf VOCtrainval_11-May-2012.tar
 ```
 #### 2. Download the augmented annotations
-[Here](https://www.dropbox.com/s/oeu149j8qtbs1x0/SegmentationClassAug.zip?dl=0) is a download link of the augmented annotations. After downloading ` SegmentationClassAug.zip `, you should unzip it and move it to `VOCdevkit/VOC2012`. The directory structure should be like this (the number in the brackets is the number of images):
+[Here](https://www.dropbox.com/s/oeu149j8qtbs1x0/SegmentationClassAug.zip?dl=0) is a download link of the augmented annotations. Or use the following command to download it directly to the server:
+``` bash
+wget https://github.com/youshyee/CoSA/releases/download/ann_voc/SegmentationClassAug.zip
+```
+
+After downloading ` SegmentationClassAug.zip `, you should unzip it and move it to `VOCdevkit/VOC2012`. The directory structure should be like this (the number in the brackets is the number of images):
 
 ``` bash
 VOCdevkit/
